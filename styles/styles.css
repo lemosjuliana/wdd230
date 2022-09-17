@@ -1,5 +1,5 @@
 header {
-    background-color: #2A9D8F;
+    background-color:  #264653;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,13 +10,13 @@ header {
 .hero-image {
     width: 120px;
     margin: 20px;
-    box-shadow: 5px 5px 10px #51534d;
+    box-shadow: 5px 5px 10px #1c1d1c;
 }
 
 .hero-name {
     text-align: left;
     color: antiquewhite;
-    text-shadow: 2px 2px #51534d;
+    text-shadow: 2px 2px #1c1d1c;
 }
 
 .main-title {
@@ -39,7 +39,7 @@ footer {
     color: antiquewhite;
     font-size: 20px;
     padding: 30px;
-    background-color: #2A9D8F;
+    background-color:  #264653;
     border-radius: 10px;
     box-shadow: 0 0 100px #6f7364;
 }
