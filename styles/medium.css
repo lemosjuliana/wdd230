@@ -1,0 +1,15 @@
+@media only screen and (min-width: 32.5em) {
+    .hero-name {
+        font-size: 50px;
+    }
+    .main-title {
+        font-size: 35px;
+    }
+    header {
+        border-radius: 10px;
+    }
+    footer {
+        border-radius: 10px;
+    }
+    
+  }
