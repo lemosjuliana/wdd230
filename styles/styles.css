@@ -17,11 +17,15 @@ header {
     text-align: left;
     color: antiquewhite;
     text-shadow: 2px 2px #1c1d1c;
+    font-family: 'Faustina', serif, 'Arial', sans-serif;
+    font-size: 50px;
 }
 
 .main-title {
     margin-left: 40px;
     color: #264653;
+    font-family: 'Faustina', serif, 'Arial', sans-serif;
+    font-size: 35px;
 }
 
 body {
