@@ -1,0 +1,22 @@
+@media only screen and (min-width: 888px){
+    .page-c {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+      }
+
+    .image-c{
+        width: 320px;  
+        margin: 55px;
+    }
+    #description-a, #description-b, #description-c{
+        float: left;
+    }
+    #description-b{
+        padding-bottom: 85px; 
+        
+    }
+    #description-c{
+        padding-bottom: 70px; 
+    }
+    
+}
