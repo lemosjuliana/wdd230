@@ -1,0 +1,155 @@
+@charset "UTF-8"; /* not necessary */
+/* bluegrey matter   #637f80 light  #536872  #708090  #536878  #36454f dark */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-size: 16px;
+	font-family: "Sansita", Ubuntu, sans-serif;
+}
+
+header,
+footer {
+	background-color: #90A955;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+}
+
+header,
+nav,
+main,
+footer {
+	/* max-width: 1119px; */
+	margin: 0 auto;
+}
+.logo-image-header{
+	width: 80px;
+}
+
+.logo-image{
+	width: 150px;
+}
+
+h1 {
+	font-size: 2rem;
+	font-family: 'Faustina', serif, 'Arial', sans-serif;
+	color: #132A13;
+	text-align: center;
+}
+h2 {
+	padding: .5rem;
+	color: #31572C;
+	font-family: 'Faustina', serif, 'Arial', sans-serif;
+}
+
+p {
+	padding: .5rem;
+	font-family: 'Roboto', sans-serif, 'Arial', sans-serif, 'Verdana', sans-serif, 'Helvetica', sans-serif;
+	font-size: 18px;
+
+}
+
+nav {
+	background-color: #31572C;
+	text-align: center;
+	box-shadow: 0 0 30px rgb(26, 26, 26);
+}
+
+nav {
+	display: flex;
+	flex-direction: column;
+}
+
+nav div {
+	flex: 1 1 auto;
+}
+
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 0.9rem;
+	font-family: 'Faustina', serif, 'Arial', sans-serif;
+}
+
+nav a:hover {
+	background-color: #132A13;
+	color: #ECF39E;
+}
+
+main {
+	/* display: grid;
+	grid-template-columns: 1fr 1fr; */
+	align-items: center;
+	justify-content: center;
+	font-size: 0.85rem;
+}
+
+main .submenu {
+	margin: 1rem;
+	border: 1px solid #bbb;
+	padding: 1rem;
+	background-color: #eee;
+	text-align: center;
+}
+
+.submenu ul {
+	margin-left: 2rem;
+}
+
+main picture {
+	display: none;
+	margin: 1rem;
+}
+
+main article {
+	margin: 1rem;
+}
+
+footer {
+	display: flex;
+	padding: 1rem;
+	justify-content: space-between;
+	font-weight: 700;
+}
+span{
+	color: #132A13;
+	font-family: 'Roboto', sans-serif, 'Arial', sans-serif, 'Verdana', sans-serif, 'Helvetica', sans-serif;
+}
+
+/***********************************************/
+/** Media Queries for larger views *************/
+/***********************************************/
+
+@media (min-width: 37.5em) {
+	nav {
+		flex-direction: row;
+	}
+	
+	nav a {
+		font-size: 1.1rem;
+	}
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	main picture {
+		display: block;
+	}
+	.logo-image{
+		width: 200px;
+	}	
+	
+}
+
+@media (min-width: 48em) {
+	nav a {
+		font-size: 1.3rem;
+	}
+}
