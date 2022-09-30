@@ -1,0 +1,21 @@
+
+/** Media Queries for medium views **/
+@media (min-width: 37.5em) {
+	nav {
+		flex-direction: row;
+	}
+	
+	nav a {
+		font-size: 1.1rem;
+	}
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	main picture {
+		display: block;
+	}
+	.logo-image{
+		width: 200px;
+	}	
+	
+}

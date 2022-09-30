@@ -1,14 +1,16 @@
-@charset "UTF-8"; /* not necessary */
+/* @charset "UTF-8"; not necessary */
 /* bluegrey matter   #637f80 light  #536872  #708090  #536878  #36454f dark */
+
+/** Media Queries for small views **/
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
-body {
+/* body {
 	font-size: 16px;
 	font-family: "Sansita", Ubuntu, sans-serif;
-}
+} */
 
 header,
 footer {
@@ -92,7 +94,7 @@ main {
 	font-size: 0.85rem;
 }
 
-main .submenu {
+main .content {
 	margin: 1rem;
 	border: 1px solid #bbb;
 	padding: 1rem;
@@ -100,18 +102,18 @@ main .submenu {
 	text-align: center;
 }
 
-.submenu ul {
+/* .content ul {
 	margin-left: 2rem;
-}
+} */
 
-main picture {
+/* main picture {
 	display: none;
 	margin: 1rem;
 }
 
 main article {
 	margin: 1rem;
-}
+} */
 
 footer {
 	display: flex;
@@ -119,16 +121,28 @@ footer {
 	justify-content: space-between;
 	font-weight: 700;
 }
-span{
+footer {
+    text-align: center;
+	color: #132A13;
+    font-size: 20px;
+    padding: 30px;
+    background-color:  #90A955;
+    box-shadow: 0 0 100px #6f7364;
+}
+
+footer h2{
+    font-size: 20px;
+}
+/* span{
 	color: #132A13;
 	font-family: 'Roboto', sans-serif, 'Arial', sans-serif, 'Verdana', sans-serif, 'Helvetica', sans-serif;
-}
+} */
 
 /***********************************************/
 /** Media Queries for larger views *************/
 /***********************************************/
 
-@media (min-width: 37.5em) {
+/* @media (min-width: 37.5em) {
 	nav {
 		flex-direction: row;
 	}
@@ -146,10 +160,10 @@ span{
 		width: 200px;
 	}	
 	
-}
+} */
 
-@media (min-width: 48em) {
+/* @media (min-width: 48em) {
 	nav a {
 		font-size: 1.3rem;
 	}
-}
+} */

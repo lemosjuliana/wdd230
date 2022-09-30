@@ -1,0 +1,6 @@
+/** Media Queries for large views **/
+@media (min-width: 48em) {
+	nav a {
+		font-size: 1.3rem;
+	}
+}
