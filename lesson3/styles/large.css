@@ -1,6 +1,31 @@
 /** Media Queries for large views **/
 @media (min-width: 48em) {
-	nav a {
-		font-size: 1.3rem;
-	}
+  nav a {
+    font-size: 1.3rem;
+  }
+  p {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  th {
+    padding: 50px;
+    font-size: 18px;
+  }
+
+  .primary {
+    padding: 50px;
+    font-size: 18px;
+  }
+  .secondary {
+    padding: 50px;
+    font-size: 18px;
+  }
+  .accent1 {
+    padding: 50px;
+    font-size: 18px;
+  }
+  .accent2 {
+    font-size: 18px;
+    padding: 30px;
+  }
 }
