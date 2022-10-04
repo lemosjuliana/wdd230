@@ -1,22 +1,23 @@
-@media only screen and (min-width: 888px){
-    .page-c {
-        grid-column: 3 / 4;
-        grid-row: 1 / 2;
-      }
+@media only screen and (min-width: 1116px) {
+  .page-b {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+  .page-c {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+  }
 
-    .image-c{
-        width: 320px;  
-        margin: 55px;
-    }
-    #description-a, #description-b, #description-c{
-        float: left;
-    }
-    #description-b{
-        padding-bottom: 85px; 
-        
-    }
-    #description-c{
-        padding-bottom: 70px; 
-    }
-    
+  .image-c {
+    width: 500px;
+    margin: 55px;
+    margin-left: 300px;
+  }
+
+  #description-b {
+    padding-bottom: 85px;
+  }
+  #description-c {
+    padding-bottom: 70px;
+  }
 }
