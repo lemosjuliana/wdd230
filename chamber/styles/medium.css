@@ -1,0 +1,71 @@
+  
+/* medium viewports */
+@media only screen and (min-width: 32.5em) {
+    header{
+        padding: 35px;
+    }
+
+	header img {
+		width: 100%;
+	}
+
+	.headings h1 {
+		font-size: 2rem;
+		margin: 0;
+	}
+
+	.m {
+		letter-spacing: 1.5pt;
+		font-size: 0.9rem;
+	}
+    nav button{
+        display: none;
+    }
+    
+    nav ul#primaryNav {
+        display: flex;
+        margin-left: 2vw;
+    }
+    
+    nav ul li a{
+        border: none; 
+    }
+    .headings h1 {
+        font-size: 2rem;
+    }
+    .content div div{
+        display: inline-flex;
+        flex-direction: row; 
+    }
+    .content,
+    .weather, 
+    .event{
+       display: inline-block;
+       flex-direction: row;
+    }
+    .container-footer {
+        flex-direction: row;
+      }
+    
+      .content-footer {
+        flex-direction: row;
+      }
+    
+      .content-footer h2 {
+        text-align: left;
+      }
+    
+      .content-footer p {
+        text-align: left;
+      }
+    
+      .container-footer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    
+      .container-footer p {
+        padding: 0 1em;
+      }
+}
