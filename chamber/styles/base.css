@@ -23,6 +23,9 @@ header {
 	width: 80px;
 	height: auto;
 }
+.social img{
+    width: 40px;
+}
 
 .headings {
 	display: flex;
@@ -56,10 +59,10 @@ header {
 /* Menu */
 
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+/* html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;} */
 
 /*----------- apply a natural box layout model to all elements --------------*/
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+/* * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; } */
 
 h1, p {margin: 0 2vw;}
 
