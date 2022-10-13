@@ -28,9 +28,10 @@
 
   nav ul li a {
     border: none;
+    font-size: 16px;
   }
   .headings h1 {
-    font-size: 2rem;
+    font-size: 25px;
   }
   .content div div {
     display: inline-flex;
@@ -66,5 +67,12 @@
 
   .container-footer p {
     padding: 0 1em;
+  }
+  .logo img {
+    width: 60px;
+    height: auto;
+  }
+  .social img {
+    width: 30px;
   }
 }

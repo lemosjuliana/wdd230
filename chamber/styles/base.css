@@ -10,7 +10,7 @@ header {
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-  box-shadow: 0 0 30px rgb(26, 26, 26);
+ 
 }
 
 .logo {
@@ -19,11 +19,11 @@ header {
   margin-left: 1rem;
 }
 .logo img {
-  width: 80px;
+  width: 40px;
   height: auto;
 }
 .social img {
-  width: 40px;
+  width: 20px;
 }
 
 .headings {
@@ -33,7 +33,7 @@ header {
 }
 
 .headings h1 {
-  font-size: 1.8rem;
+  font-size: 18px;
   font-family: "Faustina", serif, "Arial", sans-serif;
   color: #132a13;
   text-align: center;
@@ -72,7 +72,7 @@ nav button {
   margin: 0.2rem 2vw;
   background: transparent;
   border: none;
-  font-size: 2rem;
+  font-size: 25px;
   color: #555;
 }
 
@@ -84,6 +84,7 @@ nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  
 }
 
 nav ul li a {
@@ -92,7 +93,8 @@ nav ul li a {
   text-decoration: none;
   color: #333;
   font-family: "Faustina", serif, "Arial", sans-serif;
-  margin: 10px;
+  margin: 8px;
+  font-size: 15px;
 }
 
 nav ul li.active a {
@@ -127,14 +129,19 @@ nav ul.open {
 /* Date */
 
 .date {
-  margin: 0.5rem;
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-top: 2px solid rgba(0, 0, 0, 0.3);
   padding: 0.75rem;
   background-color: #90a955;
   font-family: "Faustina", serif, "Arial", sans-serif;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  display: flex;
+  display:block;
   text-decoration: none;
+  text-align: center;
+  margin: 0 auto;
+  box-shadow: 0 8px 10px -6px black;
+  
 }
 
 /* Body */
@@ -167,7 +174,7 @@ footer {
   font-family: "Roboto", sans-serif, "Arial", sans-serif, "Verdana", sans-serif,
     "Helvetica", sans-serif;
   padding: 10px;
-  box-shadow: 0 0 30px rgb(26, 26, 26);
+  box-shadow: 0 -8px 10px -6px black;
 }
 
 .container-footer {
