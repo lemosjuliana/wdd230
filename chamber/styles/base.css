@@ -166,24 +166,35 @@ nav ul.open {
 }
 .content div {
   margin: 20px;
-  padding: 70px;
+  padding: 50px;
   background-color: #90a955;
 }
 .spotlight div {
-  background-color: #555;
+  background-color: #90a955;
   color: antiquewhite;
+  padding: 10px;
+  align-items: center;
+}
+div .spotlight{
+  padding: 10px;
 }
 div .hero{
   padding: 10px;
-
 }
-.hero, .weather h1{
+div .news{
+  padding: 10px;
+}
+div .event{
+  padding: 10px;
+}
+.hero, .weather, .spotlight, .news, .event h1{
   font-family: "Faustina", serif, "Arial", sans-serif;
   font-size: 15px; 
   text-align: center;
   padding: 10px;
 }
-.hero p{
+
+.hero, .news, .event, .join p{
   text-align: center;
 }
 .hero-image{
@@ -199,6 +210,24 @@ div .weather{
   width: 90%;
   align-self: center;
 }
+.transport-image,.business-image, .sustainable-image{
+  width: 90%;
+  align-self: center;
+  border: 10px solid #132a13;
+}
+.join a{
+  background-color: #132a13;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: antiquewhite;
+  display: block;
+  text-align: center;
+}
+.join a:hover{
+  background-color: #555;
+}
+
 
 /* Footer */
 

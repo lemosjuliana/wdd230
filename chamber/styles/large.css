@@ -61,6 +61,18 @@
     font-size: 30px;
 
   }
+  .spotlight h1{
+    font-size: 30px;
+  }
+  .news h1{
+    font-size: 30px;
+  }
+  .event h1{
+    font-size: 30px;
+  }
+  .join h1{
+    font-size: 30px;
+  }
   .hero-image{
     width: 100%;
   }

@@ -75,7 +75,7 @@
   .social img {
     width: 30px;
   }
-  .hero, .weather h1{
+  .hero, .weather, .spotlight, .news, .event, .join h1{
     font-size: 20px;
 
   }
