@@ -57,6 +57,8 @@ header {
 .banner{
   background-color: #132a13;
   padding: 10px;
+
+  display: none;
 }
 .banner h1{
   font-family: "Faustina", serif, "Arial", sans-serif;

@@ -20,14 +20,11 @@ const year = new Date(document.lastModified).getFullYear();
 document.querySelector("#year").innerHTML = year;
 document.querySelector("#date").innerHTML = dateTimeLastModified;
 
-const monday = now.getDate()
-const showBanner = true;
+const monday = now.getDay()
 
-if (monday == 1)
+if (monday == 1 || monday ==2)
 {
-    document.querySelector(".banner").innerHTML = showBanner;
+    const banner = document.getElementById("banner");
+    banner.style.display = "block";
 }
-else
-{
-    showBanner.style.display = "block";
-}
+
