@@ -162,6 +162,10 @@ nav ul.open {
     "Helvetica", sans-serif;
   color: #132a13;
 }
+p{
+  font-family: "Roboto", sans-serif, "Arial", sans-serif, "Verdana", sans-serif,
+    "Helvetica", sans-serif;
+}
 .weather,
 .event {
   display: block;
