@@ -274,6 +274,11 @@ main figure.myphoto figcaption{
   text-align: center;
   font-size: .75rem;
 }
+picture img{
+  width: 50%;
+  align-self: center;
+  border: 10px solid #132a13;
+}
 
 
 /* Footer */
