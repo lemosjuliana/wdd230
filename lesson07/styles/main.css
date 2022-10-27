@@ -2,10 +2,11 @@ body {
     font-size: 16px;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(228, 227, 226);
   }
 
   h1{
-    color: rgb(131, 72, 72);
+    color: rgb(90, 61, 61);
   }
   
   picture {
