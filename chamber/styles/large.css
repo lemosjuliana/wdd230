@@ -76,4 +76,10 @@
   .hero-image{
     width: 100%;
   }
+  .weather-img img{
+    width: 30%;
+  }
+  .celsius{
+   font-size: 30px;
+  }
 }

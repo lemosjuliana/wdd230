@@ -79,5 +79,11 @@
     font-size: 20px;
 
   }
+  .weather-img img{
+    width: 25%;
+  }
+  .celsius{
+   font-size: 25px;
+  }
   
 }
