@@ -82,4 +82,11 @@
   .celsius{
    font-size: 30px;
   }
+
+  /* Discover */
+
+  /* .discover-pic {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  } */
 }

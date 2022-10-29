@@ -290,7 +290,25 @@ picture img{
   width: 90%;
 }
 
+/* Discover */
 
+/* .discover-pic {
+  display: flex;
+} */
+
+picture img[data-src] {
+  filter: blur(0.2em);
+}
+
+picture img {
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
+#last-visits{
+  color:antiquewhite;
+  background-color:  #555;
+  padding: 20px;
+}
 
 /* Footer */
 
