@@ -10,7 +10,6 @@ header {
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-
 }
 
 .logo {
@@ -54,18 +53,18 @@ header {
   width: 25px;
   height: auto;
 }
-.banner{
+.banner {
   background-color: #132a13;
   padding: 10px;
 
   display: none;
 }
-.banner h1{
+.banner h1 {
   font-family: "Faustina", serif, "Arial", sans-serif;
   color: antiquewhite;
   text-align: center;
 }
-header figure.logo{
+header figure.logo {
   float: left;
   margin: 0 2% 0 0;
 }
@@ -99,7 +98,6 @@ nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-
 }
 
 nav ul li a {
@@ -151,12 +149,11 @@ nav ul.open {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  display:block;
+  display: block;
   text-decoration: none;
   text-align: center;
   margin: 0 auto;
   box-shadow: 0 8px 10px -6px black;
-
 }
 
 /* Body */
@@ -166,7 +163,7 @@ nav ul.open {
     "Helvetica", sans-serif;
   color: #132a13;
 }
-p{
+p {
   font-family: "Roboto", sans-serif, "Arial", sans-serif, "Verdana", sans-serif,
     "Helvetica", sans-serif;
 }
@@ -185,68 +182,79 @@ p{
   padding: 10px;
   align-items: center;
 }
-div .spotlight{
+div .spotlight {
   padding: 10px;
 }
-div .hero{
+div .hero {
   padding: 10px;
 }
-div .news{
+div .news {
   padding: 10px;
 }
-div .event{
+div .event {
   padding: 10px;
 }
-.hero, .weather, .spotlight, .news, .event h1{
+.hero,
+.weather,
+.spotlight,
+.news,
+.event h1 {
   font-family: "Faustina", serif, "Arial", sans-serif;
   font-size: 15px;
   text-align: center;
   padding: 10px;
 }
 
-.hero, .news, .event, .join p{
+.hero,
+.news,
+.event,
+.join p {
   text-align: center;
 }
-.hero-image{
+.hero-image {
   width: 80%;
   justify-self: center;
   display: flex;
   padding-bottom: 10px;
 }
-div .weather{
+div .weather {
   padding: 10px;
 }
 /* .weather-image{
   width: 90%;
   align-self: center;
 } */
-input[type=number] {
+input[type="number"] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif, 'Arial', sans-serif, 'Verdana', sans-serif, 'Helvetica', sans-serif;
+  font-family: "Roboto", sans-serif, "Arial", sans-serif, "Verdana", sans-serif,
+    "Helvetica", sans-serif;
 }
-input[type=submit] {
-background-color: #132a13;
-border: none;
-color: white;
-padding: 16px 32px;
-text-decoration: none;
-margin: 20px 2px;
-cursor: pointer;
-font-family: 'Roboto', sans-serif, 'Arial', sans-serif, 'Verdana', sans-serif, 'Helvetica', sans-serif;
-border-radius: 10px;
+input[type="submit"] {
+  background-color: #132a13;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 20px 2px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif, "Arial", sans-serif, "Verdana", sans-serif,
+    "Helvetica", sans-serif;
+  border-radius: 10px;
 }
-input[type=submit]:hover {
-  background-color:#555;
+input[type="submit"]:hover {
+  background-color: #555;
 }
-.transport-image,.business-image, .sustainable-image{
+.transport-image,
+.business-image,
+.sustainable-image {
   width: 90%;
   align-self: center;
   border: 10px solid #132a13;
 }
-.join a{
+.join a {
   background-color: #132a13;
   padding: 10px;
   border-radius: 10px;
@@ -256,45 +264,41 @@ input[type=submit]:hover {
   text-align: center;
   font-size: 20px;
 }
-.join a:hover{
+.join a:hover {
   background-color: #555;
 }
 ul li {
   list-style-type: none;
 }
-main figure.myphoto{
+main figure.myphoto {
   width: 100%;
   margin: 0 0 0 2%;
   float: right;
 }
-main figure.myphoto img{
+main figure.myphoto img {
   width: 100%;
 }
-main figure.myphoto figcaption{
+main figure.myphoto figcaption {
   text-align: center;
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
-picture img{
+picture img {
   width: 50%;
   align-self: center;
   border: 10px solid #132a13;
 }
-.weather-img img{
+.weather-img img {
   border: none;
   width: 25%;
 }
-.celsius{
- font-size: 25px;
+.celsius {
+  font-size: 25px;
 }
-.hero picture img{
+.hero picture img {
   width: 90%;
 }
 
 /* Discover */
-
-/* .discover-pic {
-  display: flex;
-} */
 
 picture img[data-src] {
   filter: blur(0.2em);
@@ -304,9 +308,12 @@ picture img {
   filter: blur(0em);
   transition: filter 0.5s;
 }
-#last-visits{
-  color:antiquewhite;
-  background-color:  #555;
+caption {
+  display: flex;
+}
+#last-visits {
+  color: antiquewhite;
+  background-color: #555;
   padding: 20px;
 }
 
