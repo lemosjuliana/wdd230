@@ -83,10 +83,42 @@
    font-size: 30px;
   }
 
-  /* Discover */
+  /* Join */
 
   /* .discover-pic {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
   } */
+
+  .main-grid-join {
+    display: grid;
+    grid-column: auto auto;
+    grid-row: auto;
+  }
+  .membership {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  
+form label.application input,
+form label.application select {
+  max-width: 35rem; 
+}
+
+form label.application,
+form div {
+  font-size: 18px;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+form label.applicationRadio {
+  font-size: 18px;
+}
+
+/* .main-grid-join {
+  display: block;
+} */
+
 }

@@ -85,5 +85,25 @@
   .celsius{
    font-size: 25px;
   }
+/* 
+form label.application input,
+form label.application select {
+  max-width: 35rem; 
+}
+
+form label.application,
+form div {
+  font-size: 18px;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+form label.applicationRadio {
+  font-size: 18px;
+}
+
+.main-grid-join {
+  display: block;
+} */
   
 }

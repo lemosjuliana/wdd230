@@ -30,7 +30,6 @@ if (monday == 1 || monday ==2)
 
 // Last Visit
 
-
 // initialize display elements
 const todayDisplay = document.querySelector(".today");
 const visitsDisplay = document.querySelector(".visits");

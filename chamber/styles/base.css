@@ -317,6 +317,112 @@ caption {
   padding: 20px;
 }
 
+/* Thank you */
+
+.thanks, p { 
+  text-align: center;
+}
+.thanks {
+  margin: 20px;
+  margin-bottom: 300px;
+}
+
+/* Join */
+
+/* .main-grid-join {
+  display: grid;
+  grid-column: auto auto;
+  grid-row: auto;
+} */
+
+form {
+  margin: 50px;
+  padding: 50px;
+  max-width: 100%;
+  background-color: #90a955;
+}
+
+form label.application,
+form div {
+  /* grid-column: 1 / 2;
+  grid-row: 1 / 2; */
+  padding-top: 1.8rem;
+  color: black;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif, "Arial", sans-serif, "Verdana", sans-serif,
+    "Helvetica", sans-serif;
+}
+
+form label.application input,
+form label.application select {
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #132a13;
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: #555;
+  width: 85%;
+  max-width: 15rem;
+  background-color: whitesmoke;
+}
+
+form input.submit {
+  margin-bottom: 50px;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  max-width: 20rem;
+}
+
+form label.applicationRadio {
+  display: block;
+  padding: 0.75rem 0;
+  font-family: "Roboto", sans-serif, "Arial", sans-serif, "Verdana", sans-serif,
+    "Helvetica", sans-serif;
+  font-size: 15px;
+}
+
+form label.application,
+textarea::placeholder {
+  display: block;
+  font-family: "Roboto", sans-serif, "Arial", sans-serif, "Verdana", sans-serif,
+    "Helvetica", sans-serif;
+}
+
+form label.application,
+textarea {
+  display: block;
+  padding: 0.75rem 0;
+}
+
+textarea,
+input {
+  font-family: "Roboto", sans-serif, "Arial", sans-serif, "Verdana", sans-serif,
+    "Helvetica", sans-serif;
+  padding: 0.75rem 1.5rem;
+}
+
+form label.application input:required {
+  border-left: rgb(163, 2, 2) solid 6px;
+}
+
+form label.application input:valid {
+  border-left: rgb(1, 104, 1) solid 6px;
+}
+
+/* .membership {
+  display: grid;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+} */
+
+.membership h2{
+  font-family: "Faustina", serif, "Arial", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  padding: 10px; 
+  color: #132a13;
+}
+
 /* Footer */
 
 footer {
