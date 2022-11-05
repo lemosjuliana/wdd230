@@ -92,8 +92,8 @@
 
   .main-grid-join {
     display: grid;
-    grid-column: auto, auto;
-    grid-row: auto;
+    grid-column: fr fr;
+    grid-row: fr;
   }
   .membership {
     display: grid;
