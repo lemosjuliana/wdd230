@@ -311,10 +311,9 @@ picture img {
 caption {
   display: flex;
 }
-#last-visits {
-  color: antiquewhite;
-  background-color: #555;
-  padding: 20px;
+#lastVisit {
+  font-size: 20px;
+  margin: 40px;
 }
 
 /* Thank you */

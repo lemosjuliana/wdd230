@@ -1,3 +1,5 @@
+// Hamburger Menu
+
 function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("open");
     document.getElementById("hamburgerBtn").classList.toggle("open");
@@ -5,6 +7,7 @@ function toggleMenu() {
 const x = document.getElementById('hamburgerBtn');
 x.onclick = toggleMenu;
 
+// Last Modified
 
 const datefield = document.querySelector(".date");
 const now = new Date();
@@ -30,22 +33,37 @@ if (monday == 1 || monday ==2)
 
 // Last Visit
 
-// initialize display elements
-const todayDisplay = document.querySelector(".today");
-const visitsDisplay = document.querySelector(".visits");
+const lastVisit = window.localStorage.getItem('lastVisitDate');
+const lastVisitDate = lastVisit;
+const currentDate = new Date();
 
-// get the stored value in localStorage
-let numVisits = Number(window.localStorage.getItem("visits-ls"));
+const setLastVisit = (currentDate) => 
+{
+  localStorage.setItem('lastVisitDate', currentDate);
+}
+const calculateLastVisit = (currentDate, lastVisitDate) => 
+{
+  const subtraction = currentDate - lastVisitDate;
+  return Math.floor(subtraction);
+}
+const print = (currentDate, lastVisit) => 
+{
+  const visits = document.querySelector('#lastVisit');
+  const lastVisitDate = lastVisit;
 
-// determine if this is the first visit or display the number of visits.
-if (numVisits !== 0) {
-	visitsDisplay.textContent = numVisits;
-} else {
-	visitsDisplay.textContent = `This is your first visit!`;
+  if (lastVisitDate) 
+  {
+    visits.textContent = `THIS IS YOUR FIRST VISIT!`;
+    setLastVisit(currentDate);  
+  } 
+  else 
+  {
+    const daysFromLastVisit = calculateLastVisit(currentDate, lastVisitDate);
+    setLastVisit(currentDate);
+  
+    visits.textContent = `DAYS FROM YOUR LAST VISIT ${daysFromLastVisit}`;
+  }
 }
 
-// increment the number of visits.
-numVisits++;
-// store the new number of visits value
-localStorage.setItem("visits-ls", numVisits);
+print(currentDate, lastVisitDate);
 
