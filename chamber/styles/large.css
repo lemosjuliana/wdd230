@@ -92,7 +92,7 @@
 
   .main-grid-join {
     display: grid;
-    grid-column: auto auto;
+    grid-column: auto, auto;
     grid-row: auto;
   }
   .membership {
