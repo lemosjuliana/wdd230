@@ -503,14 +503,20 @@ form label.application input:valid {
 	padding: 0.5rem;
 	max-width: 700px;
 	background-color: #eee;
-	font-family: "Caveat", cursive;
+	font-family: "Roboto", sans-serif, "Arial", sans-serif, "Verdana", sans-serif,
+    "Helvetica", sans-serif;
+}
+
+.directory h1 {
+  text-align: center;
+  color: #132a13;
+  font-family: "Faustina", serif, "Arial", sans-serif;
 }
 
 .menu {
 	margin: 1rem auto;
-	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 0.5rem;
-	background-color: #bbb;
+	background-color: #90a955;
 	text-align: center;
 }
 
@@ -582,6 +588,13 @@ img {
 	height: auto;
 	max-width: 100%; /* Images are jerks - Seattle*/
 }
+
+@media (min-width: 700px) {
+	.list section img {
+		display: block;
+	}
+}
+
 
 /* Footer */
 
