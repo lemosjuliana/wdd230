@@ -33,9 +33,9 @@
         <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
                 <ul id="primaryNav"> 
                     <li><a href="./index.html">Home</a></li>
-                    <li><a href="./discover.html">Discover</a></li>
-                    <li><a href="./directory.html">Directory</a></li>
-                    <li class="active"><a href="./join.html">Join</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li class="active"><a href="./directory.html">Directory</a></li>
+                    <li><a href="./join.html">Join</a></li>
                     <li><a href="#">Contact</a></li>    
                 </ul>
             </nav>
@@ -48,12 +48,18 @@
             /></a>
 	</div>
     </header>
-    <main>
-        <section class="headings">
-            <h1>Membership Application</h1>
-        </section>
-            <p class="thanks">Thank you for applying to join the Feira de Santana Chamber of Commerce. We will get back to you soon.</p> 
-        </main>
+   
+    <main class="directory">
+        <h1>Business Directory</h1>
+        <div class="menu">
+          <p>Choose layout</p>
+          <div>
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
+          </div>
+        </div>
+        <div id="business" class="grid"></div>
+      </main>
     
     <footer>
         <div class="container-footer">
@@ -76,6 +82,8 @@
           <p id="date"></p>
         </div>
       </footer>
-    <script src="scripts/main.js"></script> 
+    <script src="scripts/main.js"></script>  
+
 </body>
 </html>
+

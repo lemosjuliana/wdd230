@@ -1,0 +1,85 @@
+{
+    "business": [
+      {
+        "name": "Le Biscuit",
+        "address": "Av. João Durval Carneiro, 3665",
+        "phoneNumber": "+55(75)40028922",
+        "website": "https://www.lebiscuit.com.br",
+        "imgUrl": "images/lebiscuit.webp",
+        "membershipLevel": "gold"
+      },
+      {
+        "name": "Boulevard Shopping",
+        "address": "Av. João Durval Carneiro, 3665",
+        "phoneNumber": "+55(75)40028922",
+        "website": "https://boulevardfeira.com.br",
+        "imgUrl": "images/boulevard.webp",
+        "membershipLevel": "gold"
+      },
+  
+      {
+        "name": "Kadan Sushi",
+        "address": "Av. Artemia Pires, S/N",
+        "phoneNumber": "+55(75)40028922",
+        "website": "https://www.kadansushibar.com.br",
+        "imgUrl": "images/kadan.webp",
+        "membershipLevel": "silver"
+      },
+      {
+        "name": "Mundo Veterinário",
+        "address": "Av. Presidente Dutra, 989",
+        "phoneNumber": "+55(75)40028922",
+        "website": "https://lojamundoveterinario.com.br",
+        "imgUrl": "images/mundoveterinario.webp",
+        "membershipLevel": "bronze"
+      },
+      {
+        "name": "Lojas Americanas",
+        "address": "Av. Getúlio Vargas, 663",
+        "phoneNumber": "+55(75)40028922",
+        "website": "https://www.americanas.com.br",
+        "imgUrl": "images/americanas.webp",
+        "membershipLevel": "gold"
+      },
+      {
+        "name": "Hemoba",
+        "address": "Av. Presidente Dutra",
+        "phoneNumber": "+55(75)40028922",
+        "website": "http://www.hemoba.ba.gov.br",
+        "imgUrl": "images/hemoba.webp",
+        "membershipLevel": "np"
+      },
+      {
+        "name": "Ikebana",
+        "address": "Av. Getúlio Vargas, 1585",
+        "phoneNumber": "+55(75)40028922",
+        "website": "https://www.ikebanafloricultura.com.br",
+        "imgUrl": "images/ikebana.webp",
+        "membershipLevel": "silver"
+      },
+      {
+        "name": "Motopel",
+        "address": "Av. Presidente Dutra, 1361",
+        "phoneNumber": "+55(75)40028922",
+        "website": "https://www.motopel.com.br",
+        "imgUrl": "images/motopel.webp",
+        "membershipLevel": "silver"
+      },
+      {
+        "name": "Mersan",
+        "address": "Av. Maria Quitéria, 3250",
+        "phoneNumber": "+55(75)40028922 ",
+        "website": "https://www.mersan.com.br",
+        "imgUrl": "images/mersan.webp",
+        "membershipLevel": "gold"
+      },
+      {
+        "name": "Chiquinho Sorvetes",
+        "address": "Av. Getúlio Vargas, 471",
+        "phoneNumber": "+55(75)40028922",
+        "website": "https://chiquinhosorvetesfsa.com.br",
+        "imgUrl": "images/chiquinho.webp",
+        "membershipLevel": "bronze"
+      }
+    ]
+  }
