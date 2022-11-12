@@ -421,86 +421,12 @@ form label.application input:valid {
   padding: 10px; 
   color: #132a13;
 }
-/* 
-.directory {
-  padding-bottom: 5em;
-}
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-}
-
-.grid section,
-.list section {
-  background: var(--secondary-color);
-  border: 0.55em solid var(--primary-color);
-  box-shadow: 0 1.5em 2.5em -0.5em;
-  margin: 10px;
-  padding: 10px;
-  text-align: center;
-}
-
-.grid section p,
-.list section p {
-  text-align: left;
-}
-
-.grid section a,
-.list section a {
-  display: block;
-  text-align: left;
-  text-decoration: underline;
-}
-
-.grid img,
-.list img {
-  width: auto;
-  box-shadow: 0 0 30px#716f6a;
-}
-
-.menu {
-  margin: 1rem auto;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 0.5rem 3em;
-  background-color: var(--primary-color);
-  text-align: center;
-}
-
-.menu p {
-  color: var(--accent-color);
-}
-
-.menu button {
-  margin: 0 10px;
-  padding: 1em 3em;
-}
-
-.menu div {
-  display: flex;
-}
-
-.list {
-  display: flex;
-  flex-direction: column;
-}
-
-.list section {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.list section img {
-  display: none;
-} */
 
 /* Directory */
 
 .directory {
 	margin: 0 auto;
 	padding: 0.5rem;
-	/* background-color: #eee; */
 	font-family: "Roboto", sans-serif, "Arial", sans-serif, "Verdana", sans-serif,
     "Helvetica", sans-serif;
 }
@@ -541,7 +467,6 @@ section {
 .directory section {
 	border: 3px solid #132a13;
 	padding: 0.5rem;
-	/* background-color: #ccc; */
 }
 
 .grid {
@@ -555,19 +480,17 @@ section {
 	flex-direction: column;
 }
 
-.list section {
-	display: flex;
-	align-items: center;
-}
-
 .grid section {
 	flex-direction: column;
 	text-align: center;
 }
 
 .list section {
+  display: flex;
+	align-items: center;
 	flex-direction: row;
 	justify-content: left;
+  
 }
 
 .list section > * {
@@ -579,6 +502,9 @@ section {
 	display: none; /* smaller viewports only */
 }
 
+.list section {
+	display: inline-block; /* smaller viewports only */
+}
 .grid section {
   height: 400px;
   box-shadow: 0 1.5em 2.5em -1em;
@@ -591,15 +517,16 @@ section h2 {
 	font-size: 1.5rem;
 }
 
-
 section a {
-  display: block;
 	font-family: "Roboto", Arial, sans-serif;
 	font-size: 0.9rem;
   flex-direction: row;
   text-align: center;
   text-decoration: none;
   color: blue;
+  padding: 5px;
+  
+  
 }
 section a:visited {
   color: purple;
@@ -609,18 +536,7 @@ section a:visited {
 } 
 
 .directory img {
-  /* width: 80px;
-	height: auto; */
-	max-width: 100%; /* Images are jerks - Seattle*/
-}
-
-@media (min-width: 700px) {
-	.list section img {
-		display: block;
-    width: 80px;
-	  height: 100%;
-
-	}
+	max-width: 100%; 
 }
 
 

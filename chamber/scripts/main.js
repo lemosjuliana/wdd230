@@ -79,7 +79,7 @@ print(currentDate, lastVisitDate);
 const cards = document.querySelector('.cards');
 
 
-fetch("./data/business.json")
+fetch("./data/data.json")
 .then((response) => response.json())
 .then(function (jsonObject) {
   console.table(jsonObject); // temporary checking for valid response and data parsing

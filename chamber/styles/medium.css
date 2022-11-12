@@ -105,5 +105,13 @@ form label.applicationRadio {
 .main-grid-join {
   display: block;
 } */
+
+.list section img {
+  display: block;
+  width: 60px;
+  padding: 7px;
+  height: auto;
+
+}
   
 }
