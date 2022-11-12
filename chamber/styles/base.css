@@ -421,7 +421,7 @@ form label.application input:valid {
   padding: 10px; 
   color: #132a13;
 }
-
+/* 
 .directory {
   padding-bottom: 5em;
 }
@@ -493,16 +493,14 @@ form label.application input:valid {
 
 .list section img {
   display: none;
-}
+} */
 
 /* Directory */
 
 .directory {
 	margin: 0 auto;
-	border: 1px solid #bbb;
 	padding: 0.5rem;
-	max-width: 700px;
-	background-color: #eee;
+	/* background-color: #eee; */
 	font-family: "Roboto", sans-serif, "Arial", sans-serif, "Verdana", sans-serif,
     "Helvetica", sans-serif;
 }
@@ -522,6 +520,7 @@ form label.application input:valid {
 
 .menu button {
 	padding: 1rem;
+  align-items: center;
 }
 
 article,
@@ -529,10 +528,10 @@ section {
 	margin: 0.75rem;
 }
 
-section {
+.directory section {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 0.5rem;
-	background-color: #ccc;
+	/* background-color: #ccc; */
 }
 
 .grid {
@@ -556,10 +555,6 @@ section {
 	text-align: center;
 }
 
-.grid section > * {
-	margin: 0.1rem;
-}
-
 .list section {
 	flex-direction: row;
 	justify-content: left;
@@ -574,24 +569,47 @@ section {
 	display: none; /* smaller viewports only */
 }
 
-section h3 {
+.grid section {
+  height: 400px;
+  box-shadow: 0 1.5em 2.5em -0.5em;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+section h2 {
 	font-size: 1.5rem;
 }
 
+
 section a {
+  display: block;
 	font-family: "Roboto", Arial, sans-serif;
 	font-size: 0.9rem;
+  flex-direction: row;
+  text-align: center;
+  text-decoration: none;
+  color: blue;
 }
+section a:visited {
+  color: purple;
+}
+.grid section a {
+  display: inline-block;
+} 
 
-img {
-  width: 80px;
-	height: auto;
+.directory img {
+  /* width: 80px;
+	height: auto; */
 	max-width: 100%; /* Images are jerks - Seattle*/
 }
 
 @media (min-width: 700px) {
 	.list section img {
 		display: block;
+    width: 80px;
+	  height: 100%;
+
 	}
 }
 

@@ -101,13 +101,13 @@ if (h2) h2.textContent = dir.name;
 if (address) address.textContent = `Address: ${dir.address}`;
 if (phoneNumber) phoneNumber.textContent = `Contact: ${dir.phoneNumber}`;
 if (website) {
-  website.textContent = dir.website;
+  website.textContent = `${dir.name} Website`;
   website.href = dir.website;
 }
 
 // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
 image.setAttribute('src', dir.imgUrl);
-image.setAttribute('alt', `${dir.name}`);
+image.setAttribute('alt', `${dir.name} logo`);
 image.setAttribute('loading', 'lazy');
 
 // Add/append the section(card) with the h2 element
