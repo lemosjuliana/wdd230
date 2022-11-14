@@ -52,35 +52,33 @@
   .social img {
     width: 40px;
   }
- 
-  .hero h1{
-    font-size: 30px;
 
-  }
-  .weather h1{
-    font-size: 30px;
-
-  }
-  .spotlight h1{
+  .hero h1 {
     font-size: 30px;
   }
-  .news h1{
+  .weather h1 {
     font-size: 30px;
   }
-  .event h1{
+  .spotlight h1 {
     font-size: 30px;
   }
-  .join h1{
+  .news h1 {
     font-size: 30px;
   }
-  .hero-image{
+  .event h1 {
+    font-size: 30px;
+  }
+  .join h1 {
+    font-size: 30px;
+  }
+  .hero-image {
     width: 100%;
   }
-  .weather-img img{
+  .weather-img img {
     width: 30%;
   }
-  .celsius{
-   font-size: 30px;
+  .celsius {
+    font-size: 30px;
   }
 
   /* Join */
@@ -100,35 +98,47 @@
     grid-column: 2 / 3;
     grid-row: 1 / 2;
   }
+
+  .membership h2{
+    margin-top: 100px;
   
-form label.application input,
-form label.application select {
-  max-width: 35rem; 
-}
+    /* text-align: center; */
+    /* box-sizing: content-box;
+    width: 350px;
+    height: 40px; */
+  }
 
-form label.application,
-form div {
-  font-size: 18px;
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-}
+  /* .membership-paragraph{
+    margin-bottom: 0px;
+  } */
 
-form label.applicationRadio {
-  font-size: 18px;
-}
+  form label.application input,
+  form label.application select {
+    max-width: 35rem;
+  }
 
-/* .main-grid-join {
+  form label.application,
+  form div {
+    font-size: 18px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  form label.applicationRadio {
+    font-size: 18px;
+  }
+
+  /* .main-grid-join {
   display: block;
 } */
 
-/* .list section img {
+  /* .list section img {
   display: block;
   width: 80px;
   height: 100%;
 
 } */
-.list section {
-  display: flex; 
-}
-
+  .list section {
+    display: flex;
+  }
 }
