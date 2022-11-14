@@ -28,8 +28,14 @@ const monday = now.getDay();
 if (monday == 1 || monday ==2)
 {
   const banner = document.getElementById("banner");
-  banner.style.display = "block";
+  if (banner !== null) 
+  {
+    banner.style.display = "block";
+  }
 }
+  
+
+
 
 // Last Visit
 
