@@ -1,0 +1,12 @@
+body {
+    background-color: lightgray; 
+    margin: 20px;
+}
+
+h1, h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p, figure {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
