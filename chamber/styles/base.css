@@ -591,3 +591,6 @@ footer {
 .container-footer {
   margin-top: 1em;
 }
+.container-footer a {
+  text-decoration: none;
+}
