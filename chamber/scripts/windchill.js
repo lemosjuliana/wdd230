@@ -33,7 +33,7 @@ async function apiFetch() {
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = desc;
     
-    windSpeed.innerHTML = `<strong>${weatherData.wind.speed.toFixed(0) * 1.609}</strong>`;
+    windSpeed.innerHTML = `<strong>${weatherData.wind.speed.toFixed(0) * 1.609.toFixed(1)}</strong>`;
 }
 
 // const temperatureCelsius = 33;
