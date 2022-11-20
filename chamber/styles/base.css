@@ -594,3 +594,9 @@ footer {
 .container-footer a {
   text-decoration: none;
 }
+.open-weather {
+  color: #132a13;
+}
+.open-weather:hover {
+  text-decoration: underline;
+}
