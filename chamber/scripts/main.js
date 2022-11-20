@@ -31,7 +31,7 @@ const print = (today, lastVisit) => {
     const daysFromLastVisit = diffDays(today, lastVisit)-1;
     setLastVisit(today);
 
-    visits.textContent = `DAYS FROM YOUR LAST VISIT ${daysFromLastVisit}`;
+    visits.textContent = `DAYS FROM YOUR LAST VISIT: ${daysFromLastVisit}`;
   }
 
 }
