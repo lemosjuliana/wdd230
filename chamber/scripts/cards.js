@@ -99,18 +99,18 @@ const getBusinessList = async () => {
   await fetch('./data/data.json')
     .then((res) => res.json())
     .then((data) =>
-      data.directory.forEach((business) => {
-        displayDirectory(business);
-        businessList.push(business);
+      data.directory.forEach((dir) => {
+        displayDirectory(dir);
+        businessList.push(dir);
       })
     );
     
   // Selects 3 random business with gold/silver status
   const randomSpotlight = getMultipleRandom(
     businessList.filter(
-      (business) =>
-        business.membershipLevel === 'gold' ||
-        business.membershipLevel === 'silver'
+      (dir) =>
+        dir.membershipLevel === 'gold' ||
+        dir.membershipLevel === 'silver'
     ),
     3
   );
