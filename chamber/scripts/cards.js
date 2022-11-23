@@ -19,11 +19,13 @@ let h2 = document.createElement('h2');
 let address = document.createElement('p');
 let phoneNumber = document.createElement('p');
 let website = document.createElement('a');
+let membership = document.createElement('p');
 
 // Change the textContent property of the h2 element to contain the prophet's full name
 if (h2) h2.textContent = dir.name;
 if (address) address.textContent = `Address: ${dir.address}`;
 if (phoneNumber) phoneNumber.textContent = `Contact: ${dir.phoneNumber}`;
+if (membership) membership.textContent = `Membership: ${dir.membership}`
 if (website) {
   website.textContent = `${dir.name} Website`;
   website.href = dir.website;
@@ -39,14 +41,21 @@ card.appendChild(h2);
 card.appendChild(image);
 card.appendChild(address);
 card.appendChild(phoneNumber);
+card.appendChild(membership);
 card.appendChild(website);
+
 
 // Add/append the existing HTML div with the cards class with the section(card)
 document.querySelector('.spotlight').appendChild(card);
   
 // Add/append the existing HTML div with the cards class with the section(card)
-const divGrid = document.querySelector('div.grid');
-if (divGrid) divGrid.appendChild(card);
+
+if (membership = "gold")
+{
+    const divGrid = document.querySelector('div.grid');
+    if (divGrid) divGrid.appendChild(card);
+}
+
 }
 
 // const gridbutton = document.querySelector('#grid');
