@@ -9,6 +9,12 @@ fetch("./data/data.json")
   directory.forEach((dir) => displayDirectory(dir));
 });
 
+function getMultipleRandom(arr, num) 
+{
+    const shuffled = [...arr].sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, num);
+}
+
  // Selects 3 random business with gold/silver status
  const randomSpotlight = getMultipleRandom(
     directory.filter(
