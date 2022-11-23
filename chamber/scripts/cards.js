@@ -1,29 +1,26 @@
 // Cards
 
 const cards = document.querySelector('.cards');
-const getBusinessList = async () => {
-  let businessList = [];
-  await fetch('./data/data.json')
-    .then((res) => res.json())
-    .then((data) =>
-      data.directory.forEach((business) => {
-        displayDirectory(business);
-        businessList.push(business);
-      })
-    );
+
+fetch("./data/data.json")
+.then((response) => response.json())
+.then(function (jsonObject) {
+  console.table(jsonObject); // temporary checking for valid response and data parsing
+  const directory = jsonObject['business'];
+  directory.forEach((dir) => displayDirectory(dir));
+});
     
   // Selects 3 random business with gold/silver status
   const randomSpotlight = getMultipleRandom(
     businessList.filter(
-      (business) =>
-        business.membershipLevel === 'gold' ||
-        business.membershipLevel === 'silver'
+      (dir) =>
+        dir.membershipLevel === 'gold' ||
+        dir.membershipLevel === 'silver'
     ),
     3
   );
 
-  randomSpotlight.forEach((a) => displaySpotlight(a));
-};
+randomSpotlight.forEach((a) => displaySpotlight(a));
 
 getBusinessList();
 
