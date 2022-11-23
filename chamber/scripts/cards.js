@@ -49,26 +49,26 @@ const divGrid = document.querySelector('div.grid');
 if (divGrid) divGrid.appendChild(card);
 }
 
-const gridbutton = document.querySelector('#grid');
-const listbutton = document.querySelector('#list');
-const display = document.querySelector('#business');
+// const gridbutton = document.querySelector('#grid');
+// const listbutton = document.querySelector('#list');
+// const display = document.querySelector('#business');
 
-if (gridbutton) {
-gridbutton.addEventListener('click', () => {
-  // example using arrow function
-  if (display) {
-    display.classList.add('grid');
-    display.classList.remove('list');
-  }
-});
-}
+// if (gridbutton) {
+// gridbutton.addEventListener('click', () => {
+//   // example using arrow function
+//   if (display) {
+//     display.classList.add('grid');
+//     display.classList.remove('list');
+//   }
+// });
+// }
 
-if (listbutton) listbutton.addEventListener('click', showList);
+// if (listbutton) listbutton.addEventListener('click', showList);
 
-function showList() {
-if (display) {
-  display.classList.add('list');
-  display.classList.remove('grid');
-}
-}
+// function showList() {
+// if (display) {
+//   display.classList.add('list');
+//   display.classList.remove('grid');
+// }
+// }
 
