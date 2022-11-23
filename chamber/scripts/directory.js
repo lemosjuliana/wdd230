@@ -68,3 +68,7 @@ if (display) {
   display.classList.remove('grid');
 }
 }
+
+  // Add/append the existing HTML div with the cards class with the section(card)
+  const divGrid = document.querySelector('.spotlight');
+  if (divGrid) divGrid.appendChild(card);
