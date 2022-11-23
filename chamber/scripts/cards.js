@@ -1,6 +1,11 @@
-// Directory
+// Cards
 
-const cards = document.querySelector('.cards');
+// const randomCards = getMultipleRandom(businessList.filter(business) =>
+// business.membershipLevel === 'gold' || business.membershipLevel === 'silver'), 3
+// );
+// randomCards.forEach((a => display))
+
+// const cards = document.querySelector('.cards');
 
 
 fetch("./data/data.json")
@@ -10,6 +15,27 @@ fetch("./data/data.json")
   const directory = jsonObject['business'];
   directory.forEach((dir) => displayDirectory(dir));
 });
+
+const randomSpotlight = getMultipleRandom(
+    businessList.filter(
+      (business) =>
+        business.membershipLevel === 'gold' ||
+        business.membershipLevel === 'silver'
+    ),
+    3
+  );
+
+  randomSpotlight.forEach((a) => displaySpotlight(a));
+
+
+getBusinessList();
+
+function getMultipleRandom(arr, num) {
+  const shuffled = [...arr].sort(() => 0.5 - Math.random());
+
+  return shuffled.slice(0, num);
+}
+
 
 function displayDirectory(dir) {
 // Create elements to add to the document
