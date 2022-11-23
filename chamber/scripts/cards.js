@@ -5,7 +5,7 @@
 // );
 // randomCards.forEach((a => display))
 
-// const cards = document.querySelector('.cards');
+ const cards = document.querySelector('.cards');
 
 
 fetch("./data/data.json")
