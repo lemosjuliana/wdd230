@@ -19,10 +19,8 @@ fetch("./data/data.json")
 const randomSpotlight = getMultipleRandom(
     businessList.filter(
       (business) =>
-        business.membershipLevel === 'gold' ||
-        business.membershipLevel === 'silver'
-    ),
-    3
+        business.membershipLevel === 'gold' || business.membershipLevel === 'silver'
+    ),3
   );
 
   randomSpotlight.forEach((a) => displaySpotlight(a));
@@ -51,7 +49,7 @@ let membershipLevel = document.createElement('p');
 if (h2) h2.textContent = dir.name;
 if (address) address.textContent = `Address: ${dir.address}`;
 if (phoneNumber) phoneNumber.textContent = `Contact: ${dir.phoneNumber}`;
-if (membershipLevel) membership.textContent = `Membership: ${dir.membershipLevel}`
+if (membershipLevel) membershipLevel.textContent = `Membership: ${dir.membershipLevel}`
 if (website) {
   website.textContent = `${dir.name} Website`;
   website.href = dir.website;
