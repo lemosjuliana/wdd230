@@ -1,30 +1,29 @@
 // Cards
 
-// const randomCards = getMultipleRandom(businessList.filter(business) =>
-// business.membershipLevel === 'gold' || business.membershipLevel === 'silver'), 3
-// );
-// randomCards.forEach((a => display))
-
- const cards = document.querySelector('.cards');
-
-
-fetch("./data/data.json")
-.then((response) => response.json())
-.then(function (jsonObject) {
-  console.table(jsonObject); // temporary checking for valid response and data parsing
-  const directory = jsonObject['business'];
-  directory.forEach((dir) => displayDirectory(dir));
-});
-
-const randomSpotlight = getMultipleRandom(
+const cards = document.querySelector('.cards');
+const getBusinessList = async () => {
+  let businessList = [];
+  await fetch('./data/data.json')
+    .then((res) => res.json())
+    .then((data) =>
+      data.directory.forEach((business) => {
+        displayDirectory(business);
+        businessList.push(business);
+      })
+    );
+    
+  // Selects 3 random business with gold/silver status
+  const randomSpotlight = getMultipleRandom(
     businessList.filter(
       (business) =>
-        business.membershipLevel === 'gold' || business.membershipLevel === 'silver'
-    ),3
+        business.membershipLevel === 'gold' ||
+        business.membershipLevel === 'silver'
+    ),
+    3
   );
 
   randomSpotlight.forEach((a) => displaySpotlight(a));
-
+};
 
 getBusinessList();
 
@@ -35,7 +34,7 @@ function getMultipleRandom(arr, num) {
 }
 
 
-function displayDirectory(dir) {
+function displayCards(dir) {
 // Create elements to add to the document
 let card = document.createElement('section');
 let image = document.createElement('img');
@@ -65,21 +64,13 @@ card.appendChild(h2);
 card.appendChild(image);
 card.appendChild(address);
 card.appendChild(phoneNumber);
-card.appendChild(membership);
+card.appendChild(membershipLevel);
 card.appendChild(website);
 
 
-// Add/append the existing HTML div with the cards class with the section(card)
-document.querySelector('.spotlight').appendChild(card);
-  
-// Add/append the existing HTML div with the cards class with the section(card)
-
-if (membershipLevel == "gold")
-{
-    const divGrid = document.querySelector('div.grid');
-    if (divGrid) divGrid.appendChild(card);
-}
-
+  // Add/append the existing HTML div with the cards class with the section(card)
+  const divGrid = document.querySelector('.spotlightContainer');
+  if (divGrid) divGrid.appendChild(card);
 }
 
 // const gridbutton = document.querySelector('#grid');
