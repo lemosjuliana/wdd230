@@ -42,6 +42,10 @@ card.appendChild(phoneNumber);
 card.appendChild(website);
 
 // Add/append the existing HTML div with the cards class with the section(card)
+document.querySelector('.spotlight').appendChild(card);
+  
+
+// Add/append the existing HTML div with the cards class with the section(card)
 const divGrid = document.querySelector('div.grid');
 if (divGrid) divGrid.appendChild(card);
 }
@@ -69,6 +73,3 @@ if (display) {
 }
 }
 
-  // Add/append the existing HTML div with the cards class with the section(card)
-  document.querySelector('.spotlight').appendChild(cards);
-  
