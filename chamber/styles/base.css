@@ -198,6 +198,7 @@ div .event {
 .weather,
 .spotlight,
 .news,
+.join,
 .event h1 {
   font-family: "Faustina", serif, "Arial", sans-serif;
   font-size: 15px;
@@ -208,7 +209,7 @@ div .event {
 .hero,
 .news,
 .event,
-.join p {
+.join h1 {
   text-align: center;
 }
 .hero-image {
@@ -260,15 +261,24 @@ input[type="submit"]:hover {
   border-radius: 10px;
   text-decoration: none;
   color: antiquewhite;
-  display: block;
   text-align: center;
-  font-size: 20px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  margin-bottom: 50px;
+  padding: 0.75rem 1.5rem;
+  max-width: 20rem;
+  align-self: center;
 }
 .join a:hover {
   background-color: #555;
 }
+.join li {
+  text-align: center;
+  padding: 20px;
+}
 ul li {
   list-style-type: none;
+  text-align: center;
 }
 main figure.myphoto {
   width: 100%;
@@ -315,10 +325,14 @@ caption {
   font-size: 20px;
   margin: 40px;
 }
+.hero h1 {
+  font-size: 30px;
+}
 
 /* Thank you */
 
-.thanks, p { 
+.thanks,
+p {
   text-align: center;
 }
 .thanks {
@@ -336,7 +350,7 @@ caption {
 
 form {
   margin: 50px;
-  padding: 50px;
+  padding: 30px;
   max-width: 100%;
   background-color: #90a955;
 }
@@ -414,20 +428,25 @@ form label.application input:valid {
   grid-row: 1 / 2;
 } */
 
-.membership h2{
+.membership h1 {
   font-family: "Faustina", serif, "Arial", sans-serif;
   font-size: 40px;
   text-align: center;
   color: #132a13;
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
-
+.membership-paragraph {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
 
 /* Directory */
 
 .directory {
-	margin: 0 auto;
-	padding: 0.5rem;
-	font-family: "Roboto", sans-serif, "Arial", sans-serif, "Verdana", sans-serif,
+  margin: 0 auto;
+  padding: 0.5rem;
+  font-family: "Roboto", sans-serif, "Arial", sans-serif, "Verdana", sans-serif,
     "Helvetica", sans-serif;
 }
 
@@ -435,17 +454,18 @@ form label.application input:valid {
   text-align: center;
   color: #132a13;
   font-family: "Faustina", serif, "Arial", sans-serif;
+  font-size: 40px;
 }
 
 .menu {
-	margin: 1rem auto;
-	padding: 0.5rem;
-	background-color: #90a955;
-	text-align: center;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  background-color: #90a955;
+  text-align: center;
 }
 
 .menu button {
-	padding: 1.3rem;
+  padding: 1.3rem;
   align-items: center;
   background-color: #132a13;
   border: none;
@@ -461,49 +481,48 @@ form label.application input:valid {
 
 article,
 section {
-	margin: 0.75rem;
+  margin: 0.75rem;
 }
 
 .directory section {
-	border: 3px solid #132a13;
-	padding: 0.5rem;
+  border: 3px solid #132a13;
+  padding: 0.5rem;
 }
 
 .grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-items: center;
 }
 
 .list {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .grid section {
-	flex-direction: column;
-	text-align: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .list section {
   display: flex;
-	align-items: center;
-	flex-direction: row;
-	justify-content: left;
-  
+  align-items: center;
+  flex-direction: row;
+  justify-content: left;
 }
 
 .list section > * {
-	margin: 0 1rem;
-	text-align: left;
+  margin: 0 1rem;
+  text-align: left;
 }
 
 .list section img {
-	display: none; /* smaller viewports only */
+  display: none; /* smaller viewports only */
 }
 
 .list section {
-	display: inline-block; /* smaller viewports only */
+  display: inline-block; /* smaller viewports only */
 }
 .grid section {
   height: 400px;
@@ -514,31 +533,86 @@ section {
 }
 
 section h2 {
-	font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 section a {
-	font-family: "Roboto", Arial, sans-serif;
-	font-size: 0.9rem;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 0.9rem;
   flex-direction: row;
   text-align: center;
   text-decoration: none;
-  color: blue;
+  color: #132a13;
   padding: 5px;
-  
-  
 }
 section a:visited {
-  color: purple;
+  color: #333;
 }
 .grid section a {
   display: inline-block;
-} 
-
-.directory img {
-	max-width: 100%; 
 }
 
+.directory img {
+  max-width: 100%;
+}
+
+/* Contact Us */
+
+.responsive-map {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  margin: 15px;
+}
+.responsive-map iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #90a955;
+}
+
+.contact-us h1 {
+  font-family: "Faustina", serif, "Arial", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  color: #132a13;
+  padding-top: 40px;
+}
+.contact-us p {
+  text-align: left;
+}
+.contact-us-paragraph {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.contact-us {
+  height: fit-content;
+}
+.contact-us li {
+  text-align: center;
+  padding: 20px;
+}
+.contact-us a {
+  background-color: #132a13;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: antiquewhite;
+  text-align: center;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  margin-bottom: 50px;
+  padding: 0.75rem 1.5rem;
+  max-width: 20rem;
+  align-self: center;
+}
+.contact-us a:hover {
+  background-color: #555;
+}
 
 /* Footer */
 

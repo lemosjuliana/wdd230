@@ -54,7 +54,7 @@
   }
 
   .hero h1 {
-    font-size: 30px;
+    font-size: 40px;
   }
   .weather h1 {
     font-size: 30px;
@@ -94,9 +94,10 @@
     grid-row: fr; */
   }
   .membership {
-    display: grid;
+    /* display: flexbox; */
+    display: block;
     grid-column: 2 / 3;
-    grid-row: 1 / 2;
+    /* grid-row: 1 / 1; */
   }
 
   .membership h2{
@@ -140,5 +141,24 @@
 } */
   .list section {
     display: flex;
+  }
+  .contact-us {
+    /* display: flexbox; */
+    display: block;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .contact-us h2{
+    margin-top: 100px;
+  
+    /* text-align: center; */
+    /* box-sizing: content-box;
+    width: 350px;
+    height: 40px; */
+  }
+  .responsive-map{
+    grid-column: 2 / 3;
+    grid-row: auto;
   }
 }
