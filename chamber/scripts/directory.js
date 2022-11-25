@@ -25,7 +25,7 @@ if (h2) h2.textContent = dir.name;
 if (address) address.textContent = `Address: ${dir.address}`;
 if (phoneNumber) phoneNumber.textContent = `Contact: ${dir.phoneNumber}`;
 if (website) {
-  website.textContent = <strong>`${dir.name} Website`</strong>;
+  website.textContent = `${dir.name} Website`;
   website.href = dir.website;
 }
 
