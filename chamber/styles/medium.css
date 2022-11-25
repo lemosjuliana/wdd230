@@ -30,9 +30,9 @@
     border: none;
     font-size: 16px;
   }
-  .headings h1 {
+  /* .headings h1 {
     font-size: 25px;
-  }
+  } */
   .content div div {
     display: inline-flex;
     flex-direction: row;
@@ -75,9 +75,11 @@
   .social img {
     width: 30px;
   }
-  .hero, .weather, .spotlight, .news, .event, .join h1{
+  .hero, .weather, .spotlight, .news, .event, .join, h1{
     font-size: 20px;
-
+  }
+  .event h1 {
+    font-size: 20px;
   }
   .weather-img img{
     width: 25%;

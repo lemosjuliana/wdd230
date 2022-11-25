@@ -366,9 +366,7 @@ form div {
     "Helvetica", sans-serif;
 }
 
-.open-weather
-
-form label.application input,
+.open-weather form label.application input,
 form label.application select {
   display: block;
   font-size: 1rem;
@@ -405,7 +403,7 @@ textarea::placeholder {
 
 form label.application,
 textarea {
-  display: block;
+  display: grid;
   padding: 0.75rem 0;
 }
 
@@ -546,6 +544,9 @@ section a {
   text-decoration: none;
   color: #132a13;
   padding: 5px;
+}
+section a:hover {
+  text-decoration: underline;
 }
 section a:visited {
   color: #333;
