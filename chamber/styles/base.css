@@ -444,6 +444,9 @@ form label.application input:valid {
  font-weight: bold;
 }
 
+fieldset {
+ border: none;
+}
 /* Directory */
 
 .directory {
