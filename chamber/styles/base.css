@@ -440,6 +440,9 @@ form label.application input:valid {
   padding-top: 10px;
   padding-bottom: 30px;
 }
+.membership-paragraph-bold {
+ font-weight: bold;
+}
 
 /* Directory */
 
@@ -617,6 +620,10 @@ section a:visited {
 .contact-us a:hover {
   background-color: #555;
 }
+
+.contact-us-paragraph-bold {
+  font-weight: bold;
+ }
 
 /* Footer */
 
