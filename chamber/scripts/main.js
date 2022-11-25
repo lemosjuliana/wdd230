@@ -43,6 +43,7 @@ x.onclick = toggleMenu;
 
 const datefield = document.querySelector(".date");
 const now = new Date();
+
 const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
 datefield.innerHTML = fulldate;
 
@@ -66,7 +67,6 @@ let lastVisitDate = window.localStorage.getItem('lastVisitDate');
 if (lastVisitDate != null) {
     lastVisitDate = Date.parse(lastVisitDate);
 }
-const currentDate = new Date();
 
-print(currentDate, lastVisitDate);
+print(now, lastVisitDate);
 
