@@ -46,3 +46,5 @@ function displayDirectory(dir) {
   const divGrid = document.querySelector('.spotlight');
   if (divGrid) divGrid.appendChild(card);
 }
+
+//end
