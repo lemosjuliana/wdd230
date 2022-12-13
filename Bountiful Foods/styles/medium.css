@@ -1,0 +1,162 @@
+/* medium viewports */
+@media only screen and (min-width: 32.5em) {
+  header {
+    padding: 35px;
+  }
+
+  header img {
+    width: 100%;
+  }
+
+  .headings h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .m {
+    letter-spacing: 1.5pt;
+    font-size: 0.9rem;
+  }
+  nav button {
+    display: none;
+  }
+
+  nav ul#primaryNav {
+    display: flex;
+    margin-left: 2vw;
+  }
+
+  nav ul li a {
+    border: none;
+    font-size: 16px;
+  }
+  .logo img {
+    width: 60px;
+    height: auto;
+  }
+  .book,
+  .join {
+    font-size: 18px;
+  }
+  #hero-msg h4 {
+    font-family: "Open Sans", sans-serif;
+    display: block;
+  }
+  .button-box {
+    text-align: center;
+  }
+  .home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 40px;
+    grid-gap: 20px;
+  }
+  .contact-us {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .weather {
+    grid-column: 8/10;
+    grid-row: 1/2;
+  }
+  .info-drinks {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .info-california {
+    grid-column: 8/10;
+    grid-row: 2/3;
+  }
+  
+
+  /* .headings h1 {
+      font-size: 25px;
+    } */
+  .content div div {
+    display: inline-flex;
+    flex-direction: row;
+  }
+  .content,
+  .weather,
+  .event {
+    display: inline-block;
+    flex-direction: row;
+  }
+  .container-footer {
+    flex-direction: row;
+  }
+
+  .content-footer {
+    flex-direction: row;
+  }
+
+  .content-footer h2 {
+    text-align: left;
+  }
+
+  .content-footer p {
+    text-align: left;
+  }
+
+  .container-footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .container-footer p {
+    padding: 0 1em;
+  }
+  .logo img {
+    width: 60px;
+    height: auto;
+  }
+  .social img {
+    width: 30px;
+  }
+  .hero,
+  .weather,
+  .spotlight,
+  .news,
+  .event,
+  .join,
+  h1 {
+    font-size: 20px;
+  }
+  .event h1 {
+    font-size: 20px;
+  }
+  .weather-img img {
+    width: 25%;
+  }
+  .celsius {
+    font-size: 25px;
+  }
+  /* 
+  form label.application input,
+  form label.application select {
+    max-width: 35rem; 
+  }
+  
+  form label.application,
+  form div {
+    font-size: 18px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  
+  form label.applicationRadio {
+    font-size: 18px;
+  }
+  
+  .main-grid-join {
+    display: block;
+  } */
+
+  .list section img {
+    display: block;
+    width: 60px;
+    padding: 7px;
+    height: auto;
+  }
+}

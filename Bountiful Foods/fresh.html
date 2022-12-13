@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Feira de Santana Chamber Page created by 
+    Juliana Jesus Lemos in WDD 230: Web Frontend Development at 
+    Brigham Young University - Idaho">
+    <title>Bountiful Foods</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+    <header>
+    <div>
+      <figure class="logo">
+        <img src="images/logo0.webp" alt="Bountiful Foods Logo"
+        srcset="images/logo1.webp 1x, images/logo2.webp 2x,
+        images/logo3.webp 3x">
+    </figure>
+        <section class="headings">
+            <h1>Bountiful Foods</h1>
+        </section>
+    </div>
+    <nav>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+                <ul id="primaryNav"> 
+                    <li><a href="./index.html">Home</a></li>
+                    <li class="active"><a href="./fresh.html">Fresh</a></li>
+                    <li><a href="./aboutUs.html">About Us</a></li>   
+                </ul>
+            </nav>
+    <!-- <div class="social">
+		<a href="https://www.facebook.com/" target="_blank"
+              ><img src="images/icon-facebook.png" alt="facebook logo"
+            /></a>
+            <a href="https://www.linkedin.com/" target="_blank"
+              ><img src="images/icon-linkedin.png" alt="linkedin logo"
+            /></a>
+	</div> -->
+    </header>
+        <!-- <div id="hero">
+            <div id="hero-box">
+                <picture>
+                    <img id="hero-img" src="images/hero.webp" data-src="images/hero.webp" loading ="lazy" alt="Fresh Fruits and Drinks">
+                </picture>
+            </div>
+            <section id="hero-msg">
+                <h1 class="home-title">Make your own fruit drink mix!</h1>
+                <h4>We hope to inspire those who seek a healthier way of life to feel inspired to include fruits and organic drinks in their diet!</h4>
+                <div class='button-box'>
+                    <a class='book' href="fresh.html">Make your own fruit drink mix</a>
+                </div>
+            </section>
+        </div>  -->
+        <div>
+            <h1 class="fresh-title">Make your own fruit drink mix!</h1>
+        </div>
+    <main>
+        <form id="fresh" name="fresh" method="get">
+            <section class="form-h1">
+                <h1>Build Your Drink</h1>
+                <p>*Required field</p>
+            </section>
+            <label class="application">First Name* <input type="text" name="firstName" required></label>
+            <!-- <label class="application">Last Name* <input type="text" name="lastName" required></label> -->
+            <!-- <label class="application">Title (Business Position) <input type="text" name="title" pattern="[a-zA-Z -]{7,}"><small
+              >Accepts only alpha characters, hyphens, with at least 7
+              characters.</small></label> -->
+            <label class="application">Email* <input type="email" name="email" placeholder="example@email.com" required></label>
+            <label class="application">Phone* <input type="tel" name="phone" required></label>
+            <!-- <label class="application">Business name* <input type="text" name="businessName" required></label> -->
+            <div>Available fruit options</div>
+            <fieldset>
+                <select name="fruits1" id="fruits1"></select>
+                <select name="fruits2" id="fruits2"></select>
+                <select name="fruits3" id="fruits3"></select>
+            </fieldset>
+            <label class="application">Add special instructions
+            <textarea class="application"
+            name="description"
+            rows="5"
+            cols="25"
+            placeholder="Example: add a scoop of honey..."></textarea>
+            </label>
+            
+            <input type="hidden" id="dateTime" name="dateTime" value="" />
+
+            <input class="submit" type="submit" value="Get my drink" />
+
+            </form>
+    </main>
+    <footer>
+        <div class="container-footer">
+            <div class="content-footer">
+            <!-- <img src="images/logo0.webp" alt="Bountiful Foods logo"> -->
+            <div>
+                <h1>Bountiful Foods</h1>
+                <p>More information, check the <a class="open-weather" href="references.html">Attribution Page</a></p>
+                <!-- <p class="underline">1050 Cannon Rd, Carlsbad, CA 92008, United States</p> -->
+            </div>
+            </div>
+            <div>
+            <p>info@bountifulfoods.org</p>
+            <p>650-607-7237</p>
+            <a class="open-weather"
+                href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106928.88466366762!2d-117.35784215078083!3d33.12149995897076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc73453f3bee59%3A0xa4cb5592fcf65d2f!2sCarlsbad%2C%20CA%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1669909922835!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">📍
+                Carlsbad, California</a>
+            </div>
+          <div class="container-footer">
+            <p>&copy; <span id="year"></span> Bountiful Foods</p>
+            <p>Juliana Lemos</p>
+            <p>WDD 230 Project</p>
+            <p>Weather Data by <a class="open-weather" href="https://openweathermap.org/">Open Weather</a></p>
+            <p id="date"></p>
+          </div>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.webp" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.webp" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.webp" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+    <script src="scripts/hamburgermenu.js"></script>
+    <script src="scripts/fresh.js"></script>
+</body>

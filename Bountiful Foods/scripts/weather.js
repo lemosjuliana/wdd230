@@ -1,15 +1,12 @@
 
+// Weather
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 const windSpeed = document.querySelector('.wind');
-const humidity = document.querySelector('.humidity');
 
-const apiKey = '245fdfa150e6c39f910a65e689559e4d';
-const q = 'Carlsbad';
-const units = 'metric';
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=-12.2667&lon=-38.9667&units=metric&appid=8c5ac37b8eff6867f0476cd3ed23a43b';
 
-const url = `https://api.openweathermap.org/data/2.5/weather?q=${q}&units=${units}&appid=${apiKey}`;
 async function apiFetch() {
     try {
       const response = await fetch(url);
@@ -29,7 +26,6 @@ async function apiFetch() {
 
   function displayResults(weatherData) {
     currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
-    humidity.textContent = weatherData.main.humidity;
     
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     const desc = weatherData.weather[0].description;
