@@ -149,6 +149,7 @@ function showOutput(list = fruits)
         base.appendChild(element);
     }); 
     myDrinks += 1;
+    drinkCount();
 
     document.getElementById('mix-form').reset();
 }
@@ -177,5 +178,5 @@ function getDate() {
  }
 
 getFruits(url);
-document.getElementById('mix-btn').addEventListener('click', showOutput);
-document.getElementById('mix-btn').addEventListener('click', drinkCount);
+document.getElementById('sub-btn').addEventListener('click', showOutput);
+
