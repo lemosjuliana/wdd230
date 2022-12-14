@@ -32,11 +32,15 @@
     grid-column: 2/3;
     grid-row: 1/2;
   }
+  .info-california{
+    grid-column: 2/8;
+    grid-row: 2/3;
+  }
   .info-drinks {
     grid-column: 3/7;
     grid-row: 1/2;
   }
-  .info-california {
+  .forecast {
     grid-column: 7/12;
     grid-row: 1/3;
   }

@@ -66,7 +66,7 @@
     <main>
         <div class="div-img-about-us">
             <picture>
-                <img id="info-california-img" src="images/info-california.webp" data-src="images/info-california.webp" loading ="lazy" alt="Heisler Park">
+                <img class="info-california-img" src="images/info-california.webp" data-src="images/info-california.webp" loading ="lazy" alt="Heisler Park">
             </picture>
         </div>
         <div class="info-about-us">
@@ -137,26 +137,24 @@
             <div class="content-footer">
             <!-- <img src="images/logo0.webp" alt="Bountiful Foods logo"> -->
             <div>
-                <h2>Bountiful Foods</h2>
-                <p class="underline">1050 Cannon Rd, Carlsbad, CA 92008, United States</p>
+                <h1>Bountiful Foods</h1>
+                <p>More information, check the <a class="open-weather" href="references.html">Attribution Page</a></p>
+                <!-- <p class="underline">1050 Cannon Rd, Carlsbad, CA 92008, United States</p> -->
             </div>
             </div>
             <div>
             <p>info@bountifulfoods.org</p>
             <p>650-607-7237</p>
+            <a class="open-weather"
+                href="https://www.google.com/maps/place/Carlsbad,+CA,+EUA/@33.12152,-117.287802,11z/data=!4m5!3m4!1s0x80dc73453f3bee59:0xa4cb5592fcf65d2f!8m2!3d33.1580933!4d-117.3505939?hl=pt-BR">📍
+                Carlsbad, California</a>
             </div>
-        </div>
-        <strong><a class="open-weather"
-            href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106928.88466366762!2d-117.35784215078083!3d33.12149995897076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc73453f3bee59%3A0xa4cb5592fcf65d2f!2sCarlsbad%2C%20CA%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1669909922835!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">📍
-            Carlsbad, California</a></strong>
-          </div>
           <div class="container-footer">
-            <p>&copy; <span id="year"></span> Bountiful Foods</p>
+            <p>&copy; <span id="date1"></span></p>
             <p>Juliana Lemos</p>
-            <p>WDD 230 Project</p>
+            <!-- <p>WDD 230 Project</p> -->
             <p>Weather Data by <a class="open-weather" href="https://openweathermap.org/">Open Weather</a></p>
-            <p>More information, check the <a class="open-weather" href="references.html">Attribution Page</a></p>
-            <p id="date"></p>
+            <p>Last Updated: <span id="currentdate"></span></p>
           </div>
         <div class="social">
             <a href="https://facebook.com" target="_blank">
@@ -170,3 +168,6 @@
             </a>
         </div>
     </footer>
+    <script src="scripts/hamburgermenu.js"></script>
+    <script src="scripts/lastmodified.js"></script>
+    </body> 

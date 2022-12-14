@@ -191,6 +191,7 @@ nav ul.open {
 .contact-us,
 .contact-us-about-us,
 .weather,
+.forecast,
 .info-drinks,
 .info-california {
   margin-top: 50px;
@@ -198,6 +199,7 @@ nav ul.open {
 .contact-us,
 .contact-us-about-us,
 .weather,
+.forecast,
 .info-drinks,
 .info-california h1 {
   text-align: center;
@@ -218,6 +220,7 @@ nav ul.open {
   grid-column: 1/3;
   grid-row: 4/5;
 }
+
 /* .contact-us {
     background-color: #ab2937;
     padding: 10px;
@@ -249,6 +252,13 @@ picture {
 #info-california-img {
   width: 85%;
   margin-bottom: 10px;
+  float: left;
+  margin: 15px;
+  max-width: 300px;
+  min-width: 100px;
+}
+.info-california-paragraph {
+  text-align: left;
 }
 
 /* ###### FRESH PAGE ###### */
@@ -356,7 +366,7 @@ fieldset {
   align-items: center;
 }
 
-#info-california-img {
+.info-california-img {
   width: 75%;
   margin: 10px;
   margin-top: 40px;
@@ -378,7 +388,6 @@ fieldset {
 .responsive-map {
   grid-column: 1/2;
   grid-row: 1/2;
-  
 }
 .contact-us-about-us {
   grid-column: 1/2;
@@ -387,7 +396,20 @@ fieldset {
 
 /* ###### ATTRIBUITION PAGE ###### */
 
-
+.home-title-attribuition {
+  margin: 50px;
+  font-size: 2em;
+}
+.reference,
+.reference-a,
+.reference-img {
+  margin: 20px;
+}
+.reference-a,
+.reference-img {
+  display: block;
+  margin-bottom: 20px;
+}
 
 /* ###### FOOTER ###### */
 footer {

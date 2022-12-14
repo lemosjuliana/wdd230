@@ -72,24 +72,34 @@
         <div class="weather"><h1>Local Weather</h1>
             <!-- <h1>OpenWeatherMap.org API Test</h1> -->
             <!-- <p>The current temperature in Fairbanks, Alaska is </p> -->
-              <span id="current-temp"></span> &deg;C
+              <P><span id="temperature"></span>&deg;F</li></P>
                 <!-- <h2>Current Condition Icon</h2> -->
-            <figure>
+            <!-- <figure>
             <img src="#" alt="#" id="weather-icon" />
             <figcaption></figcaption>
-            </figure>
-              <p>Wind Speed: <span class="wind"></span> Km/h</p>
-              <p>Wind Chill: <span class="windChill"></span></p>
-              <p>Humidity: <span class="humidity"></span></p>
+            </figure> -->
+            <div><img scr="" alt = "" id="weather-icon"></div>
+              <p class="contact-us-paragraph-bold">Condition </p> 
+                <p><span id="description"></span></p>
+              <p class="contact-us-paragraph-bold">Humidity </p>
+              <p><span id="humidity"></span>%</p>
           </div>
+          <div class="forecast"> 
+          <div id="forecast"><h1>Weather Forecast</h1>
+            <p>For the next three days</p>
+            <div id="forecasts"></div>
+          </div>
+         </div>
           <div class="info-drinks"><h1>Delicious drinks!</h1>
             <p class="info-drinks-paragraph">Our natural drinks bring many benefits. According to nutritionists,
             fruit drinks contribute to hydration. Our juices are a source of vitamins, minerals, and fiber. Our
             ingredients are selected, and our juices are free of preservatives.
             </p>
-            <h1 class="drinks-made">
-                Drinks made: <h1 class="drinks-made-number"></h1>
-            </h1>
+            <section id="drink-count">
+                <h1 class="drinks-made">Drinks made: </h1>
+                <br>
+                <h1 class="drinks-made"><span id="drink-total">0</span></h1>
+            </section>
           </div>
           <div class="info-california">
             <picture>
@@ -119,11 +129,11 @@
             <p>info@bountifulfoods.org</p>
             <p>650-607-7237</p>
             <a class="open-weather"
-                href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106928.88466366762!2d-117.35784215078083!3d33.12149995897076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc73453f3bee59%3A0xa4cb5592fcf65d2f!2sCarlsbad%2C%20CA%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1669909922835!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">📍
+                href="https://www.google.com/maps/place/Carlsbad,+CA,+EUA/@33.12152,-117.287802,11z/data=!4m5!3m4!1s0x80dc73453f3bee59:0xa4cb5592fcf65d2f!8m2!3d33.1580933!4d-117.3505939?hl=pt-BR">📍
                 Carlsbad, California</a>
             </div>
           <div class="container-footer">
-            <p>&copy; <span id="year"></span> Bountiful Foods</p>
+            <p>&copy; <span id="date1"></span></p>
             <p>Juliana Lemos</p>
             <!-- <p>WDD 230 Project</p> -->
             <p>Weather Data by <a class="open-weather" href="https://openweathermap.org/">Open Weather</a></p>
@@ -142,6 +152,7 @@
         </div>
     </footer>
     <script src="scripts/hamburgermenu.js"></script>
+    <script src="scripts/lazyload.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/lastmodified.js"></script>
 </body>

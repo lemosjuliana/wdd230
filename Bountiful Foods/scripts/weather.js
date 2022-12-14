@@ -1,61 +1,83 @@
 
-// Weather
-const currentTemp = document.querySelector('#current-temp');
-const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
-const windSpeed = document.querySelector('.wind');
+const key = '8c5ac37b8eff6867f0476cd3ed23a43b';
+const lat = 33.16;
+const lon = -117.33;
+const weatherURL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}&units=imperial`;
+const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${key}&units=imperial`;
+const weatherIcon = document.getElementById('weather-icon');
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=-12.2667&lon=-38.9667&units=metric&appid=8c5ac37b8eff6867f0476cd3ed23a43b';
-
-async function apiFetch() {
-    try {
-      const response = await fetch(url);
-      if (response.ok) {
-        const data = await response.json();
-        console.log(data); // this is for testing the call
-        displayResults(data);
-      } else {
-          throw Error(await response.text());
-      }
-    } catch (error) {
-        console.log(error);
-    }
+//Fetch the data and await the response, storing the response as a json object
+async function getWeather() {
+  const response = await fetch(weatherURL);
+  if (response.ok) {
+    const data = await response.json();
+    outputWeather(data);
   }
+};
+
+// Displays Weather
+function outputWeather(data) {
+  const words = data.weather[0].description.split(" ");
+  const description = words.map((word) => { return word[0].toUpperCase() + word.substring(1) }).join(" ");
+  document.getElementById('temperature').textContent = data.main.temp.toFixed(0);
+  document.getElementById('description').textContent = description;
+  document.getElementById('humidity').textContent = data.main.humidity;
+  const weatherIconSrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+  weatherIcon.setAttribute('src', weatherIconSrc);
+  weatherIcon.setAttribute('alt', description);
+}
+//Calls Weather Data
+getWeather();
+
+//Fetch the data and await the response, storing the response as a json object
+async function getForecast() {
+  const response = await fetch(forecastURL);
+  if (response.ok) {
+    const data = await response.json();
+    outputForecast(data);
+  }
+}
+
+// Displays Forecast
+function outputForecast(data) {
   
-  apiFetch();
-
-  function displayResults(weatherData) {
-    currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
-    
-    const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
-    const desc = weatherData.weather[0].description;
+  const date = new Date()
+  let day = date.getDate();
+  let index = 0;
+  const month = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
   
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', desc);
-    captionDesc.textContent = desc;
-    
-    windSpeed.innerHTML = `<strong>${weatherData.wind.speed.toFixed(0) * 1.609.toFixed(1)}</strong>`;
+  data.list.forEach((forecast) => {
+   
+    if (index % 14 == 0) {
+      
+      const div = document.createElement('div');
+      const heading = document.createElement('p');
+      const icon = document.createElement('img');
+      const temp = document.createElement('p');
+      const words = forecast.weather[0].description.split(" ");
+      const description = words.map((word) => { return word[0].toUpperCase() + word.substring(1) }).join(" ");
+
+      //Sets attributes
+      heading.innerHTML = `<b>${month[date.getMonth()]} ${day}</b>`;
+      temp.innerHTML = `${forecast.main.temp.toFixed(0)}&deg;F`;
+      // icon.setAttribute('src', 'http://openweathermap.org/img/wn/${forecast.weather[0].icon}.png')
+      // icon.setAttribute('data-src', `http://openweathermap.org/img/wn/${forecast.weather[0].icon}.png`);
+      // icon.setAttribute('alt', description);
+      // icon.setAttribute('loading', 'lazy');
+
+      // Displays Weather
+      div.appendChild(heading);
+      div.appendChild(icon);
+      div.appendChild(temp);
+      document.getElementById('forecasts').appendChild(div);
+
+      //Increment for the next day
+      day += 1;
+    }
+    //Update the index to keep track of where we are in the list
+    index += 1;
+  });
 }
-
-// const temperatureCelsius = 33;
-// const windSpeedKmH = 2.5;
-
- const temperatureFahrenheit = currentTemp * (9/5) + 32;
- const windSpeedMH = windSpeed/ 1.609;
-
-// document.querySelector('.temperature').textContent = temperatureCelsius;
-// document.querySelector('.wind').textContent = windSpeedKmH;
-
-if (temperatureFahrenheit <= 50 && windSpeedMH > 3)
-{
-const windChill = (35.74 + (0.6215 * temperatureFahrenheit))-(35.75 * Math.pow(windSpeedMH,0.16)) + 
-(0.4275 * temperatureFahrenheit * Math.pow(windSpeedMH,0.16));
-const windChillRounded = Math.round(windChill);
-document.querySelectorAll('.windChill').textContent = windChillRounded;
-}
-else
-{
-document.querySelector('.windChill').textContent = 'N/A';
-}
-
-
+//Calls forecast Data
+getForecast();
+//lazyLoader.imagesToLoad();
