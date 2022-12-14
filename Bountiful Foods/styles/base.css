@@ -235,6 +235,7 @@ nav ul.open {
   margin-left: 10px;
   margin-right: 10px;
   padding-top: 10px;
+  margin-bottom: 20px;
   padding-bottom: 10px;
   border-radius: 10px;
   justify-items: center;
@@ -357,6 +358,8 @@ form label.application input:valid {
 fieldset {
   border: none;
 }
+
+
 
 /* ###### ABOUT US ###### */
 

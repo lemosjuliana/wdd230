@@ -1,45 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Feira de Santana Chamber Page created by 
-    Juliana Jesus Lemos in WDD 230: Web Frontend Development at 
+    <meta name="description" content="Feira de Santana Chamber Page created by
+    Juliana Jesus Lemos in WDD 230: Web Frontend Development at
     Brigham Young University - Idaho">
     <title>Bountiful Foods</title>
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Secular+One&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Secular+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
 </head>
-
 <body>
     <header>
-        <div>
-            <figure class="logo">
-                <img src="images/logo0.webp" alt="Bountiful Foods Logo" srcset="images/logo1.webp 1x, images/logo2.webp 2x,
+    <div>
+      <figure class="logo">
+        <img src="images/logo0.webp" alt="Bountiful Foods Logo"
+        srcset="images/logo1.webp 1x, images/logo2.webp 2x,
         images/logo3.webp 3x">
-            </figure>
-            <section class="headings">
-                <h1>Bountiful Foods</h1>
-            </section>
-        </div>
-        <nav>
-            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
-            <ul id="primaryNav">
-                <li><a href="./index.html">Home</a></li>
-                <li class="active"><a href="./fresh.html">Fresh</a></li>
-                <li><a href="./aboutUs.html">About Us</a></li>
-            </ul>
-        </nav>
-        <!-- <div class="social">
+     </figure>
+        <section class="headings">
+            <h1>Bountiful Foods</h1>
+        </section>
+    </div>
+    <nav>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+                <ul id="primaryNav">
+                    <li class="active"><a href="./index.html">Home</a></li>
+                    <li><a href="./fresh.html">Fresh</a></li>
+                    <li><a href="./aboutUs.html">About Us</a></li>
+                </ul>
+            </nav>
+    <!-- <div class="social">
 		<a href="https://www.facebook.com/" target="_blank"
               ><img src="images/icon-facebook.png" alt="facebook logo"
             /></a>
@@ -48,52 +46,22 @@
             /></a>
 	</div> -->
     </header>
-    <!-- <div id="hero">
+        <div id="hero">
             <div id="hero-box">
                 <picture>
                     <img id="hero-img" src="images/hero.webp" data-src="images/hero.webp" loading ="lazy" alt="Fresh Fruits and Drinks">
                 </picture>
             </div>
             <section id="hero-msg">
-                <h1 class="home-title">Make your own fruit drink mix!</h1>
-                <h4>We hope to inspire those who seek a healthier way of life to feel inspired to include fruits and organic drinks in their diet!</h4>
+                <h1 class="home-title">THANK YOU FOR YOUR REQUEST!</h1>
+                <h4>We will get back to you soon</h4>
                 <div class='button-box'>
-                    <a class='book' href="fresh.html">Make your own fruit drink mix</a>
+                    <a class='book' href="index.html">Go to the Home Page</a>
                 </div>
             </section>
-        </div>  -->
-    <div>
-        <h1 class="fresh-title">Make your own fruit drink mix!</h1>
-    </div>
-    <main>
-        <form id="mix-form">
-            <section class="form-h1">
-                <h1>Build Your Drink</h1>
-                <p>*Required field</p>
-            </section>
-            <label class="application">First Name* <input type="text" id="firstName" name="firstName" required></label>
-            <label class="application">Email* <input type="email" id="email" name="email" placeholder="example@email.com"
-                    required></label>
-            <label class="application">Phone* <input type="tel" Id="phone" name="phone" required></label>
-            <div>Select 3 fruits</div>
-            <fieldset>
-                <div id="fruit-selector">
-            </fieldset>
-            <label class="application">Add special instructions
-                <textarea id="instructions"  class="application" name="description" rows="5" cols="25"
-                    placeholder="Example: add a scoop of honey..."></textarea>
-            </label>
-
-            <input type="date" name="date" hidden id="date">
-
-            <input id="sub-btn" class="submit" type="submit" value="Get my drink" />
-
-        </form>
-        <section id="form-output" class="true-center">
-            <h1 class="fresh-title">Your drink information</h1>
-            <div id="output" class="contact-us">
-                <p>Create a drink first!</p>
-            </div>
+        </div>
+    <main class="home-grid">
+        
     </main>
     <footer>
         <div class="container-footer">
@@ -109,7 +77,7 @@
             <p>info@bountifulfoods.org</p>
             <p>650-607-7237</p>
             <a class="open-weather"
-                href="https://www.google.com/maps/place/Carlsbad,+CA,+EUA/@33.12152,-117.287802,11z/data=!4m5!3m4!1s0x80dc73453f3bee59:0xa4cb5592fcf65d2f!8m2!3d33.1580933!4d-117.3505939?hl=pt-BR">ðŸ“
+                href="https://www.google.com/maps/place/Carlsbad,+CA,+EUA/@33.12152,-117.287802,11z/data=!4m5!3m4!1s0x80dc73453f3bee59:0xa4cb5592fcf65d2f!8m2!3d33.1580933!4d-117.3505939?hl=pt-BR">📍
                 Carlsbad, California</a>
             </div>
           <div class="container-footer">
@@ -132,6 +100,8 @@
         </div>
     </footer>
     <script src="scripts/hamburgermenu.js"></script>
-    <script src="scripts/fresh.js"></script>
+    <script src="scripts/lazyload.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/mydrinks.js"></script>
     <script src="scripts/lastmodified.js"></script>
 </body>
