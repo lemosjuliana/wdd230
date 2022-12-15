@@ -71,7 +71,14 @@
     grid-column: 1/10;
     grid-row: 3/4;
   }
-  
+  .responsive-map {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .contact-us-about-us {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
 
   /* .headings h1 {
       font-size: 25px;
@@ -136,26 +143,6 @@
   .celsius {
     font-size: 25px;
   }
-  /* 
-  form label.application input,
-  form label.application select {
-    max-width: 35rem; 
-  }
-  
-  form label.application,
-  form div {
-    font-size: 18px;
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
-  
-  form label.applicationRadio {
-    font-size: 18px;
-  }
-  
-  .main-grid-join {
-    display: block;
-  } */
 
   .list section img {
     display: block;
@@ -163,4 +150,7 @@
     padding: 7px;
     height: auto;
   }
+  iframe {
+    width: 600px;
+  } 
 }
