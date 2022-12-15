@@ -184,5 +184,5 @@ function getDate() {
  }
 
 getFruits(url);
-document.getElementById('sub-btn').addEventListener('click', showOutput);
+document.getElementById('submit-btn').addEventListener('click', showOutput);
 
