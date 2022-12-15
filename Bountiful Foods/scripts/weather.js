@@ -6,28 +6,7 @@ const weatherURL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&l
 const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${key}&units=imperial`;
 const weatherIcon = document.getElementById('weather-icon');
 
-//Fetch the data and await the response, storing the response as a json object
-async function getWeather() {
-  const response = await fetch(weatherURL);
-  if (response.ok) {
-    const data = await response.json();
-    outputWeather(data);
-  }
-};
-
-// Displays Weather
-function outputWeather(data) {
-  const words = data.weather[0].description.split(" ");
-  const description = words.map((word) => { return word[0].toUpperCase() + word.substring(1) }).join(" ");
-  document.getElementById('temperature').textContent = data.main.temp.toFixed(0);
-  document.getElementById('description').textContent = description;
-  document.getElementById('humidity').textContent = data.main.humidity;
-  const weatherIconSrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-  weatherIcon.setAttribute('src', weatherIconSrc);
-  weatherIcon.setAttribute('alt', description);
-}
-//Calls Weather Data
-getWeather();
+// FORECAST
 
 //Fetch the data and await the response, storing the response as a json object
 async function getForecast() {
@@ -52,32 +31,47 @@ function outputForecast(data) {
       
       const div = document.createElement('div');
       const heading = document.createElement('p');
-      const icon = document.createElement('img');
-      const temp = document.createElement('p');
+      const temperature = document.createElement('p');
       const words = forecast.weather[0].description.split(" ");
       const description = words.map((word) => { return word[0].toUpperCase() + word.substring(1) }).join(" ");
 
       //Sets attributes
       heading.innerHTML = `<b>${month[date.getMonth()]} ${day}</b>`;
-      temp.innerHTML = `${forecast.main.temp.toFixed(0)}&deg;F`;
-      // icon.setAttribute('src', 'http://openweathermap.org/img/wn/${forecast.weather[0].icon}.png')
-      // icon.setAttribute('data-src', `http://openweathermap.org/img/wn/${forecast.weather[0].icon}.png`);
-      // icon.setAttribute('alt', description);
-      // icon.setAttribute('loading', 'lazy');
+      temperature.innerHTML = `${forecast.main.temp.toFixed(0)}&deg;F`;
 
-      // Displays Weather
+      // Displays Weather and gets next day
       div.appendChild(heading);
-      div.appendChild(icon);
-      div.appendChild(temp);
+      div.appendChild(temperature);
       document.getElementById('forecasts').appendChild(div);
-
-      //Increment for the next day
       day += 1;
     }
-    //Update the index to keep track of where we are in the list
     index += 1;
   });
 }
 //Calls forecast Data
 getForecast();
-//lazyLoader.imagesToLoad();
+
+// WEATHER
+
+//Fetch the data and await the response, storing the response as a json object
+async function getWeather() {
+  const response = await fetch(weatherURL);
+  if (response.ok) {
+    const data = await response.json();
+    outputWeather(data);
+  }
+};
+
+// Displays Weather
+function outputWeather(data) {
+  const words = data.weather[0].description.split(" ");
+  const description = words.map((word) => { return word[0].toUpperCase() + word.substring(1) }).join(" ");
+  document.getElementById('temperature').textContent = data.main.temp.toFixed(0);
+  document.getElementById('description').textContent = description;
+  document.getElementById('humidity').textContent = data.main.humidity;
+  const weatherIconSrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+  weatherIcon.setAttribute('src', weatherIconSrc);
+  weatherIcon.setAttribute('alt', description);
+}
+//Calls Weather Data
+getWeather();

@@ -66,7 +66,7 @@
         <h1 class="fresh-title">Make your own fruit drink mix!</h1>
     </div>
     <main>
-        <form id="mix-form">
+        <form id="fresh-form">
             <section class="form-h1">
                 <h1>Build Your Drink</h1>
                 <p>*Required field</p>
@@ -77,7 +77,7 @@
             <label class="application">Phone* <input type="tel" Id="phone" name="phone" required></label>
             <div>Select 3 fruits</div>
             <fieldset>
-                <div id="fruit-selector">
+                <div id="fruit-selector"></div>
             </fieldset>
             <label class="application">Add special instructions
                 <textarea id="instructions"  class="application" name="description" rows="5" cols="25"
@@ -89,11 +89,12 @@
             <input id="sub-btn" class="submit" type="submit" value="Get my drink" />
 
         </form>
-        <section id="form-output" class="true-center">
+        <section id="form-output">
             <h1 class="fresh-title">Your drink information</h1>
             <div id="output" class="contact-us">
                 <p>Create a drink first!</p>
             </div>
+        </section>
     </main>
     <footer>
         <div class="container-footer">
@@ -109,7 +110,7 @@
             <p>info@bountifulfoods.org</p>
             <p>650-607-7237</p>
             <a class="open-weather"
-                href="https://www.google.com/maps/place/Carlsbad,+CA,+EUA/@33.12152,-117.287802,11z/data=!4m5!3m4!1s0x80dc73453f3bee59:0xa4cb5592fcf65d2f!8m2!3d33.1580933!4d-117.3505939?hl=pt-BR">ðŸ“
+                href="https://www.google.com/maps/place/Carlsbad,+CA,+EUA/@33.12152,-117.287802,11z/data=!4m5!3m4!1s0x80dc73453f3bee59:0xa4cb5592fcf65d2f!8m2!3d33.1580933!4d-117.3505939?hl=pt-BR">📍
                 Carlsbad, California</a>
             </div>
           <div class="container-footer">
@@ -119,6 +120,7 @@
             <p>Weather Data by <a class="open-weather" href="https://openweathermap.org/">Open Weather</a></p>
             <p>Last Updated: <span id="currentdate"></span></p>
           </div>
+        </div>  
         <div class="social">
             <a href="https://facebook.com" target="_blank">
                 <img src="images/facebook.webp" alt="fb icon">

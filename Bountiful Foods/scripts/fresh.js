@@ -3,6 +3,10 @@ const url = 'https://brotherblazzard.github.io/canvas-content/fruit.json';
 let fruits = [];
 let myDrinks = Number(window.localStorage.getItem("myDrinks"));
 
+// SELECT FRUIT
+
+// Creates and displays select elements
+
 async function getFruits()
 {
     const response = await fetch(url);
@@ -50,7 +54,7 @@ function displayResults(fruitData)
             fruitsSelect3.appendChild(fruitToAdd);
         });
         
-    // Add to DOM
+   
     const dropdowns = document.getElementById('fruit-selector');
 
     fruitsSelect1.setAttribute('id', 'fruits1');
@@ -69,16 +73,17 @@ function displayResults(fruitData)
     dropdowns.appendChild(document.createElement('br'));
 }
 
-// Show output
+// Gives the information about the created drink
 function showOutput(list = fruits)
 {
     const base = document.getElementById('output');
     base.innerHTML = '';
-    let carbs = 0;
-    let proteins = 0;
     let fats = 0;
     let sugars = 0;
-    let calorieCount = 0;
+    let calories = 0;
+    let carbs = 0;
+    let proteins = 0;
+    
 
     const fruit1 = document.getElementById('fruits1').value;
     const fruit2 = document.getElementById('fruits2').value;
@@ -91,34 +96,34 @@ function showOutput(list = fruits)
             proteins += fruit.nutritions.protein;
             fats += fruit.nutritions.fat;
             sugars += fruit.nutritions.sugar;
-            calorieCount += fruit.nutritions.calories;
+            calories += fruit.nutritions.calories;
         }
         else
         {
-            console.log("no match");
+            console.log("error");
         }
     });
 
     // Get all other form input values
     const orderDate = document.getElementById('date');
     orderDate.value = getDate();
-    const oDate = orderDate.value;
+    const orderDateValue = orderDate.value;
     const firstName = document.getElementById('firstName').value;
     const email = document.getElementById('email').value;
     const phone = document.getElementById('phone').value;
-    const aInstruct = document.getElementById('instructions').value;
+    const speciaInstructions = document.getElementById('instructions').value;
 
     //Create DOM Elements
     const dateE = document.createElement('p');
     const nameE = document.createElement('p');
     const emailE = document.createElement('p');
     const phoneE = document.createElement('p');
-    const aInstructE = document.createElement('p');
+    const instructionsE = document.createElement('p');
     const fruit1E = document.createElement('p');
     const fruit2E = document.createElement('p');
     const fruit3E = document.createElement('p');
 
-    //fruit nutrients
+    // Creates elements for each nutrition fact
     const carbsE = document.createElement('p');
     const proteinsE = document.createElement('p');
     const fatsE = document.createElement('p');
@@ -127,31 +132,32 @@ function showOutput(list = fruits)
 
     //add the content
     dateE.innerHTML = `<strong>Date: </strong> ${getDate()}`;
-    nameE.innerHTML = `<strong>Name: </strong> ${firstName}`;
+    nameE.innerHTML = `<strong>First Name: </strong> ${firstName}`;
     emailE.innerHTML = `<strong>Email: </strong> ${email}`;
     phoneE.innerHTML = `<strong>Phone Number: </strong> ${phone}`;
-    aInstructE.innerHTML = `<strong>Additional Instructions:</strong><br> ${aInstruct}`;
+    instructionsE.innerHTML = `<strong>Special Instructions:</strong><br> ${speciaInstructions}`;
     const lineBR1 = document.createElement('br');
 
-    fruit1E.innerHTML = `<strong>First Fruit: </strong> ${fruit1}`;
-    fruit2E.innerHTML = `<strong>Second Fruit: </strong> ${fruit2}`;
-    fruit3E.innerHTML = `<strong>Third Fruit: </strong> ${fruit3}`;
+    fruit1E.innerHTML = `<strong>Fruit #1: </strong> ${fruit1}`;
+    fruit2E.innerHTML = `<strong>Fruit #2: </strong> ${fruit2}`;
+    fruit3E.innerHTML = `<strong>Fruit #3: </strong> ${fruit3}`;
     const lineBR2 = document.createElement('br');
     
-    carbsE.innerHTML = `<strong>Carbohydrates: </strong> ${carbs}g`;
-    proteinsE.innerHTML = `<strong>Proteins: </strong> ${proteins}g`;
     fatsE.innerHTML = `<strong>Fats: </strong> ${fats}g`;
     sugarsE.innerHTML = `<strong>Sugars: </strong> ${sugars}g`;
-    calorieCountE.innerHTML = `<strong>Calories: </strong> ${calorieCount}`;
+    calorieCountE.innerHTML = `<strong>Calories: </strong> ${calories}`;
+    carbsE.innerHTML = `<strong>Carbohydrates: </strong> ${carbs}g`;
+    proteinsE.innerHTML = `<strong>Proteins: </strong> ${proteins}g`;
+   
 
-    const domEList = [dateE, nameE, emailE, phoneE, aInstructE, lineBR1, fruit1E, fruit2E, fruit3E, lineBR2, calorieCountE, carbsE, proteinsE, fatsE, sugarsE];
+    const domEList = [dateE, nameE, emailE, phoneE, instructionsE, lineBR1, fruit1E, fruit2E, fruit3E, lineBR2, calorieCountE, carbsE, proteinsE, fatsE, sugarsE];
     domEList.forEach(element => {
         base.appendChild(element);
     }); 
     myDrinks += 1;
     drinkCount();
 
-    document.getElementById('mix-form').reset();
+    document.getElementById('fresh-form').reset();
 }
 
 function drinkCount()
